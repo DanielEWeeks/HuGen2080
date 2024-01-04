@@ -11,6 +11,7 @@ book:
     - logistics.qmd
     - gitIntro.qmd
     - Git_commands.Qmd
+    - Basic_Unix_commands.Qmd
     - summary.qmd
     - references.qmd
 
