@@ -1,0 +1,15 @@
+# GitHub
+
+## GitHub Introduction lecture
+
+Here's a recording of this lecture (32 minutes 8 seconds):
+
+[Recording](https://pitt.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e274c96f-1906-4955-9a8d-b06600f51f49){.external target="_blank"}
+
+<iframe credentialless src="https://pitt.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=e274c96f-1906-4955-9a8d-b06600f51f49&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+## GitHub Introduction slides
+
+[PDF slide set](pdfs/GitHubIntro.pdf){target="_blank"}
+
+ <iframe width="100%" height="800" src="pdfs/GitHubIntro.pdf">

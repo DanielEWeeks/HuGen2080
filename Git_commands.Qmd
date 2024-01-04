@@ -1,0 +1,72 @@
+---
+editor: 
+  mode: source
+---
+
+# Git Commands
+
+## git - best practices
+
+pull - work - commit - pull - push
+
+-   `git pull`
+-   Make changes
+-   `git commit` your changes to your local repository
+-   `git pull` the latest remote changes to your local repository
+-   `git push` your changes.
+
+Pay attention to any error messages.
+
+## Outline of essential Git commands
+
+Here's an outline of essential Git commands, initially created by ChatGPT:
+
+### Initialization and Configuration
+
+-   `git init`: Initializes a new Git repository in the current directory.
+-   `git config`: Configure Git settings.
+
+### Basic Workflow
+
+-   `git add`: Stage changes.
+-   `git commit -m "message"`: Commits staged changes with a descriptive message.
+
+### Remote Repositories
+
+-   `git clone`: Clones a remote repository to your local machine.
+-   `git push`: Send local changes to remote repository.
+-   `git pull`: Retrieve changes from remote.
+-   `git remote`: Manage remote repositories.
+
+### Status and Changes
+
+-   `git status`: Shows the current state of your working directory.
+-   `git diff`: Displays changes between working directory and the last commit.
+
+### History and Logs
+
+-   `git log`: View commit history.
+-   `git log --oneline`: Compact commit history.
+
+### Ignoring Files
+
+-   Create `.gitignore` file.
+
+### Branching
+
+-   `git branch`: List/create branches.
+-   `git checkout`: Switch branches.
+-   `git merge`: Merge branches.
+
+### Undoing Changes
+
+-   `git reset`: Unstage or reset changes.
+-   `git revert`: Create undoing commits.
+
+### Tagging
+
+-   `git tag`: Create and manage tags.
+
+### Stashing
+
+-   `git stash`: Temporarily store changes.
