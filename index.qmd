@@ -1,0 +1,17 @@
+# Preface {.unnumbered}
+
+This is a Quarto book created from markdown and executable code using Quarto within RStudio.
+
+Book web site: <https://danieleweeks.github.io/HuGen2080/>
+
+Book source code: <https://github.com/DanielEWeeks/HuGen2080>
+
+Created by Daniel E. Weeks
+
+Websites: 
+
+<https://www.sph.pitt.edu/directory/daniel-weeks>
+
+To learn more about Quarto books visit <https://quarto.org/docs/books>.
+
+
