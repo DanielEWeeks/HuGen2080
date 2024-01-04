@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>HuGen2080 book - 5&nbsp; Basic Shell Commands</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./summary.html" rel="next">
+<link href="./Git_commands.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Basic_Unix_commands.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">HuGen2080 book</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./logistics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Logistics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./gitIntro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">GitHub</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Git_commands.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git Commands</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Basic_Unix_commands.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#acknowledgment-and-license" id="toc-acknowledgment-and-license" class="nav-link active" data-scroll-target="#acknowledgment-and-license"><span class="header-section-number">5.1</span> Acknowledgment and License</a></li>
+  <li><a href="#shell-basics" id="toc-shell-basics" class="nav-link" data-scroll-target="#shell-basics"><span class="header-section-number">5.2</span> Shell Basics:</a></li>
+  <li><a href="#creating-things" id="toc-creating-things" class="nav-link" data-scroll-target="#creating-things"><span class="header-section-number">5.3</span> Creating Things:</a>
+  <ul class="collapse">
+  <li><a href="#how-to-create-new-files-and-directories.." id="toc-how-to-create-new-files-and-directories.." class="nav-link" data-scroll-target="#how-to-create-new-files-and-directories.."><span class="header-section-number">5.3.1</span> How to create new files and directories..</a></li>
+  <li><a href="#how-to-delete-files-and-directories" id="toc-how-to-delete-files-and-directories" class="nav-link" data-scroll-target="#how-to-delete-files-and-directories"><span class="header-section-number">5.3.2</span> How to delete files and directories…</a></li>
+  <li><a href="#how-to-copy-and-rename-files-and-directories" id="toc-how-to-copy-and-rename-files-and-directories" class="nav-link" data-scroll-target="#how-to-copy-and-rename-files-and-directories"><span class="header-section-number">5.3.3</span> How to copy and rename files and directories…</a></li>
+  </ul></li>
+  <li><a href="#pipes-and-filters" id="toc-pipes-and-filters" class="nav-link" data-scroll-target="#pipes-and-filters"><span class="header-section-number">5.4</span> Pipes and Filters</a>
+  <ul class="collapse">
+  <li><a href="#how-to-use-wildcards-to-match-filenames" id="toc-how-to-use-wildcards-to-match-filenames" class="nav-link" data-scroll-target="#how-to-use-wildcards-to-match-filenames"><span class="header-section-number">5.4.1</span> How to use wildcards to match filenames…</a></li>
+  <li><a href="#how-to-redirect-to-a-file-and-get-input-from-a-file" id="toc-how-to-redirect-to-a-file-and-get-input-from-a-file" class="nav-link" data-scroll-target="#how-to-redirect-to-a-file-and-get-input-from-a-file"><span class="header-section-number">5.4.2</span> How to redirect to a file and get input from a file …</a></li>
+  </ul></li>
+  <li><a href="#how-to-repeat-operations-using-a-loop" id="toc-how-to-repeat-operations-using-a-loop" class="nav-link" data-scroll-target="#how-to-repeat-operations-using-a-loop"><span class="header-section-number">5.5</span> How to repeat operations using a loop…</a>
+  <ul class="collapse">
+  <li><a href="#for-loop" id="toc-for-loop" class="nav-link" data-scroll-target="#for-loop"><span class="header-section-number">5.5.1</span> For loop</a></li>
+  <li><a href="#while-loop" id="toc-while-loop" class="nav-link" data-scroll-target="#while-loop"><span class="header-section-number">5.5.2</span> While Loop</a></li>
+  </ul></li>
+  <li><a href="#finding-things" id="toc-finding-things" class="nav-link" data-scroll-target="#finding-things"><span class="header-section-number">5.6</span> Finding Things</a>
+  <ul class="collapse">
+  <li><a href="#how-to-select-lines-matching-patterns-in-text-files" id="toc-how-to-select-lines-matching-patterns-in-text-files" class="nav-link" data-scroll-target="#how-to-select-lines-matching-patterns-in-text-files"><span class="header-section-number">5.6.1</span> How to select lines matching patterns in text files…</a></li>
+  <li><a href="#how-to-find-files-with-certain-properties" id="toc-how-to-find-files-with-certain-properties" class="nav-link" data-scroll-target="#how-to-find-files-with-certain-properties"><span class="header-section-number">5.6.2</span> How to find files with certain properties…</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="acknowledgment-and-license" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="acknowledgment-and-license"><span class="header-section-number">5.1</span> Acknowledgment and License</h2>
+<p>This chapter is a derivative of the <a href="https://github.com/swcarpentry/DEPRECATED-boot-camps/blob/master/shell/shell_cheatsheet.md">Basic Shell Commands</a> cheat sheet from the <a href="https://github.com/swcarpentry/DEPRECATED-boot-camps">DEPRECATED-boot-camps/shell/shell_cheatsheet.md</a> file created by Software Carpentry and is used under the Creative Commons - Attribution license <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
+<p>Minor section numbering and formatting changes were made here.</p>
+<p>This chapter is licensed under the <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> license by Daniel E. Weeks.</p>
+<hr>
+</section>
+<section id="shell-basics" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="shell-basics"><span class="header-section-number">5.2</span> Shell Basics:</h2>
+<table class="table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 87%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>.</code></td>
+<td>a single period refers to the current directory</td>
+</tr>
+<tr class="even">
+<td><code>..</code></td>
+<td>a double period refers to the directory immediately above the current directory</td>
+</tr>
+<tr class="odd">
+<td><code>~</code></td>
+<td>refers to your home directory. <em>Note:</em> this command does NOT work on Windows machines (Mac and Linux are okay)</td>
+</tr>
+<tr class="even">
+<td><code>cd ./dirname</code></td>
+<td>changes the current directory to the directory <code>dirname</code></td>
+</tr>
+<tr class="odd">
+<td><code>ls -F</code></td>
+<td>tells you what files and directories are in the current directory</td>
+</tr>
+<tr class="even">
+<td><code>pwd</code></td>
+<td>tells you what directory you are in (<code>pwd</code> stands for <em>p</em>rint <em>w</em>orking <em>d</em>irectory)</td>
+</tr>
+<tr class="odd">
+<td><code>history</code></td>
+<td>lists previous commands you have entered. <code>history | less</code> lets you page through the list.</td>
+</tr>
+<tr class="even">
+<td><code>man</code> <em>cmd</em></td>
+<td>displays the <em>man</em>ual page for a command.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="creating-things" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="creating-things"><span class="header-section-number">5.3</span> Creating Things:</h2>
+<section id="how-to-create-new-files-and-directories.." class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="how-to-create-new-files-and-directories.."><span class="header-section-number">5.3.1</span> How to create new files and directories..</h3>
+<table class="table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 94%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>mkdir ./dirname</code></td>
+<td>makes a new directory called dirname below the current directory. <em>Note:</em> Windows users will need to use <code>\</code> instead of <code>/</code> for the path separator</td>
+</tr>
+<tr class="even">
+<td><code>nano filename</code></td>
+<td>if <code>filename</code> does not exist, <code>nano</code> creates it and opens the <code>nano</code> text editor. If the file exists, <code>nano</code> opens it. <em>Note:</em> <em>(i)</em> You can use a different text editor if you like. In gnome Linux, <code>gedit</code> works really well too. <em>(ii)</em> <code>nano</code> (or <code>gedit</code>) create text files. It doesn’t matter what the file extension is (or if there is one)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="how-to-delete-files-and-directories" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="how-to-delete-files-and-directories"><span class="header-section-number">5.3.2</span> How to delete files and directories…</h3>
+<section id="remember-that-deleting-is-forever.-there-is-no-going-back" class="level4" data-number="5.3.2.1">
+<h4 data-number="5.3.2.1" class="anchored" data-anchor-id="remember-that-deleting-is-forever.-there-is-no-going-back"><span class="header-section-number">5.3.2.1</span> <em>Remember that deleting is forever. There is NO going back</em></h4>
+<table class="table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 85%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>rm ./filename</code></td>
+<td>deletes a file called <code>filename</code> from the current directory</td>
+</tr>
+<tr class="even">
+<td><code>rmdir ./dirname</code></td>
+<td>deletes the directory <code>dirname</code> from the current directory. <em>Note:</em> <code>dirname</code> must be empty for <code>rmdir</code> to run.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="how-to-copy-and-rename-files-and-directories" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="how-to-copy-and-rename-files-and-directories"><span class="header-section-number">5.3.3</span> How to copy and rename files and directories…</h3>
+<table class="table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 90%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>mv tmp/filename .</code></td>
+<td>moves the file <code>filename</code> from the directory <code>tmp</code> to the current directory. <em>Note:</em> <em>(i)</em> the original <code>filename</code> in <code>tmp</code> is deleted. <em>(ii)</em> <code>mv</code> can also be used to rename files (e.g., <code>mv filename newname</code></td>
+</tr>
+<tr class="even">
+<td><code>cp tmp/filename .</code></td>
+<td>copies the file <code>filename</code> from the directory <code>tmp</code> to the current directory. <em>Note:</em> <em>(i)</em> the original file is still there</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="pipes-and-filters" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="pipes-and-filters"><span class="header-section-number">5.4</span> Pipes and Filters</h2>
+<section id="how-to-use-wildcards-to-match-filenames" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="how-to-use-wildcards-to-match-filenames"><span class="header-section-number">5.4.1</span> How to use wildcards to match filenames…</h3>
+<p>Wildcards are a shell feature that makes the command line much more powerful than any GUI file managers. Wildcards are particularly useful when you are looking for directories, files, or file content that can vary along a given dimension. These wildcards can be used with any command that accepts file names or text strings as arguments.</p>
+<section id="table-of-commonly-used-wildcards" class="level4" data-number="5.4.1.1">
+<h4 data-number="5.4.1.1" class="anchored" data-anchor-id="table-of-commonly-used-wildcards"><span class="header-section-number">5.4.1.1</span> Table of commonly used wildcards</h4>
+<table class="table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Wildcard</th>
+<th>Matches</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>*</code></td>
+<td>zero or more characters</td>
+</tr>
+<tr class="even">
+<td><code>?</code></td>
+<td>exactly one character</td>
+</tr>
+<tr class="odd">
+<td><code>[abcde]</code></td>
+<td>exactly one of the characters listed</td>
+</tr>
+<tr class="even">
+<td><code>[a-e]</code></td>
+<td>exactly one character in the given range</td>
+</tr>
+<tr class="odd">
+<td><code>[!abcde]</code></td>
+<td>any character not listed</td>
+</tr>
+<tr class="even">
+<td><code>[!a-e]</code></td>
+<td>any character that is not in the given range</td>
+</tr>
+<tr class="odd">
+<td><code>{software,carpentry}</code></td>
+<td>exactly one entire word from the options given</td>
+</tr>
+</tbody>
+</table>
+<p>See the cheatsheet on regular expressions on the second page of this <a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/strings.pdf">PDF cheatsheet</a> for more “wildcard” shortcuts.</p>
+</section>
+</section>
+<section id="how-to-redirect-to-a-file-and-get-input-from-a-file" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="how-to-redirect-to-a-file-and-get-input-from-a-file"><span class="header-section-number">5.4.2</span> How to redirect to a file and get input from a file …</h3>
+<p>Redirection operators can be used to redirect the output from a program from the display screen to a file where it is saved (or many other places too, like your printer or to another program where it can be used as input).</p>
+<table class="table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 93%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>&gt;</code></td>
+<td>write <code>stdout</code> to a new file; overwrites any file with that name (e.g., <code>ls *.md &gt; mardkownfiles.txt</code>)</td>
+</tr>
+<tr class="even">
+<td><code>&gt;&gt;</code></td>
+<td>append <code>stdout</code> to a previously existing file; if the file does not exist, it is created (e.g., <code>ls *.md &gt;&gt; markdownfiles.txt</code>)</td>
+</tr>
+<tr class="odd">
+<td><code>&lt;</code></td>
+<td>assigns the information in a file to a variable, loop, etc (e.g., <code>n &lt; markdownfiles.md</code>)</td>
+</tr>
+</tbody>
+</table>
+<section id="how-to-use-the-output-of-one-command-as-the-input-to-another-with-a-pipe" class="level4" data-number="5.4.2.1">
+<h4 data-number="5.4.2.1" class="anchored" data-anchor-id="how-to-use-the-output-of-one-command-as-the-input-to-another-with-a-pipe"><span class="header-section-number">5.4.2.1</span> How to use the output of one command as the input to another with a pipe…</h4>
+<p>A special kind of redirection is called a pipe and is denoted by <code>|</code>.</p>
+<table class="table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 94%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>|</td>
+<td>Output from one command line program can be used as input to another one (e.g.&nbsp;ls *.md | head gives you the first 5 <code>*.md</code> files in your directory)</td>
+</tr>
+</tbody>
+</table>
+<section id="example" class="level5" data-number="5.4.2.1.1">
+<h5 data-number="5.4.2.1.1" class="anchored" data-anchor-id="example"><span class="header-section-number">5.4.2.1.1</span> Example:</h5>
+<pre><code>ls *.md | head | sed -i `s/markdown/software/g`</code></pre>
+<p>changes all the instances of the word <code>markdown</code> to <code>software</code> in the first 5 <code>*.md</code> files in your current directory.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="how-to-repeat-operations-using-a-loop" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="how-to-repeat-operations-using-a-loop"><span class="header-section-number">5.5</span> How to repeat operations using a loop…</h2>
+<p>Loops assign a value in a list or counter to a variable that takes on a different value each time through the loop. There are 2 primary kinds of loops: <code>for</code> loops and <code>while</code> loops.</p>
+<section id="for-loop" class="level3" data-number="5.5.1">
+<h3 data-number="5.5.1" class="anchored" data-anchor-id="for-loop"><span class="header-section-number">5.5.1</span> For loop</h3>
+<p>For loops loop through variables in a list</p>
+<pre><code>for varname in list
+do
+    command1 $varname
+    command2 $varname
+done</code></pre>
+<p>where,</p>
+<ul>
+<li><code>for</code>, <code>in</code>, <code>do</code>, and <code>done</code> are keywords</li>
+<li><code>list</code> contains a list of values separated by spaces. e.g.&nbsp;<code>list</code> can be replaced by <code>1 2 3 4 5 6</code> or by <code>Bob Mary Sue Greg</code>. <code>list</code> can also be a variable:</li>
+<li><code>varname</code> is assigned a value without using a <code>$</code> and the value is retrieved using <code>$varname</code></li>
+</ul>
+<p>–</p>
+<pre><code>list[0]=Sam
+list[1]=Lynne
+list[2]=Dhavide
+list[3]=Trevor
+.
+.
+.
+list[n]=Mark</code></pre>
+<p>which is referenced in the loop by:</p>
+<pre><code>for varname in ${list[@]}
+do
+    command1 $varname
+    command2 $varname
+done</code></pre>
+<p><em>Note:</em> Bash is zero indexed, so counting always starts at <code>0</code>, not <code>1</code>.</p>
+</section>
+<section id="while-loop" class="level3" data-number="5.5.2">
+<h3 data-number="5.5.2" class="anchored" data-anchor-id="while-loop"><span class="header-section-number">5.5.2</span> While Loop</h3>
+<p>While loops loop through the commands until a condition is met. For example</p>
+<pre><code>COUNTER=0
+while [ ${COUNTER} -lt 10 ]; do
+    command 1
+    command 2
+    COUNTER=`expr ${COUNTER} + 1` 
+done</code></pre>
+<p>continues the loop as long as the value in the variable COUNTER is less than 10 (incremented by 1 on each iteration of the loop).</p>
+<ul>
+<li><code>while</code>, <code>do</code>, and <code>done</code> are keywords</li>
+</ul>
+<section id="commonly-used-conditional-operators" class="level4" data-number="5.5.2.1">
+<h4 data-number="5.5.2.1" class="anchored" data-anchor-id="commonly-used-conditional-operators"><span class="header-section-number">5.5.2.1</span> Commonly used conditional operators</h4>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Operator</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>-eq</code></td>
+<td>is equal to</td>
+</tr>
+<tr class="even">
+<td><code>-ne</code></td>
+<td>is not equal to</td>
+</tr>
+<tr class="odd">
+<td><code>-gt</code></td>
+<td>greater than</td>
+</tr>
+<tr class="even">
+<td><code>-ge</code></td>
+<td>greater than or equal to</td>
+</tr>
+<tr class="odd">
+<td><code>-lt</code></td>
+<td>less than</td>
+</tr>
+<tr class="even">
+<td><code>-le</code></td>
+<td>less than or equal to</td>
+</tr>
+</tbody>
+</table>
+<p>Use <code>man bash</code> or <code>man test</code> to learn about other operators you can use.</p>
+</section>
+</section>
+</section>
+<section id="finding-things" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="finding-things"><span class="header-section-number">5.6</span> Finding Things</h2>
+<section id="how-to-select-lines-matching-patterns-in-text-files" class="level3" data-number="5.6.1">
+<h3 data-number="5.6.1" class="anchored" data-anchor-id="how-to-select-lines-matching-patterns-in-text-files"><span class="header-section-number">5.6.1</span> How to select lines matching patterns in text files…</h3>
+<p>To find information within files, you use a command called <code>grep</code>.</p>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Example command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>grep [options] day haiku.txt</code></td>
+<td>finds every instance of the string <code>day</code> in the file haiku.txt and pipes it to standard output</td>
+</tr>
+</tbody>
+</table>
+<section id="commonly-used-grep-options" class="level4" data-number="5.6.1.1">
+<h4 data-number="5.6.1.1" class="anchored" data-anchor-id="commonly-used-grep-options"><span class="header-section-number">5.6.1.1</span> Commonly used <code>grep</code> options</h4>
+<table class="table">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 97%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><code>grep</code> options</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>-E</code></td>
+<td>tells grep you will be using a regular expression. Enclose the regular expression in quotes. <em>Note:</em> the power of <code>grep</code> comes from using regular expressions. Please see the regular expressions sheet for examples</td>
+</tr>
+<tr class="even">
+<td><code>-i</code></td>
+<td>makes matching case-insensitive</td>
+</tr>
+<tr class="odd">
+<td><code>-n</code></td>
+<td>limits the number of lines that match to the first n matches</td>
+</tr>
+<tr class="even">
+<td><code>-v</code></td>
+<td>shows lines that do not match the pattern (inverts the match)</td>
+</tr>
+<tr class="odd">
+<td><code>-w</code></td>
+<td>outputs instances where the pattern is a whole word</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="how-to-find-files-with-certain-properties" class="level3" data-number="5.6.2">
+<h3 data-number="5.6.2" class="anchored" data-anchor-id="how-to-find-files-with-certain-properties"><span class="header-section-number">5.6.2</span> How to find files with certain properties…</h3>
+<p>To find file and directory names, you use a command called <code>find</code></p>
+<table class="table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 90%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Example command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>find . -type d</code></td>
+<td><code>find</code> recursively descends the directory tree for each path listed to match the expression given in the command line with file or directory names in the search path</td>
+</tr>
+</tbody>
+</table>
+<section id="commonly-used-find-options" class="level4" data-number="5.6.2.1">
+<h4 data-number="5.6.2.1" class="anchored" data-anchor-id="commonly-used-find-options"><span class="header-section-number">5.6.2.1</span> Commonly used <code>find</code> options</h4>
+<table class="table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 91%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><code>find</code> options</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>-type [df]</code></td>
+<td><code>d</code> lists directories; <code>f</code> lists files</td>
+</tr>
+<tr class="even">
+<td><code>-maxdepth n</code></td>
+<td><code>find</code> automatically searches subdirectories. If you don’t want that, specify the number of levels below the working directory you would like to search</td>
+</tr>
+<tr class="odd">
+<td><code>-mindepth n</code></td>
+<td>starts <code>find</code>’s search <code>n</code> levels below the working directory</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/danieleweeks\.github\.io\/HuGen2080");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Git_commands.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git Commands</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
