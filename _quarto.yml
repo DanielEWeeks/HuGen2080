@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "HuGen2080"
+  author: "Daniel E. Weeks"
+  date: today
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
