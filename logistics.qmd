@@ -1,0 +1,15 @@
+# Logistics
+
+## GitHub: Set up an account
+
+Please go to <https://github.com> and set up a GitHub account.
+
+Choose your GitHub user name carefully, as you may end up using it later in a professional context.
+
+## GitHub Classroom
+
+As GitHub Classroom will be used to distribute course materials and to submit assignments, it would be best if you get git working on your own computer. The easiest way to do this is to install RStudio, R, and git on your computer.
+
+Please follow the detailed instructions in <https://github.com/jfiksel/github-classroom-for-students>
+
+In particular, see Step 5 re generating an ssh key so you don't need to login every time.

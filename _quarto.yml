@@ -2,12 +2,13 @@ project:
   type: book
 
 book:
-  title: "HuGen2080"
+  title: "HuGen2080 book"
   author: "Daniel E. Weeks"
   date: today
   chapters:
     - index.qmd
     - intro.qmd
+    - logistics.qmd
     - summary.qmd
     - references.qmd
 
