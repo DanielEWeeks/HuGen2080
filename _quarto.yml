@@ -9,6 +9,7 @@ book:
     - index.qmd
     - intro.qmd
     - logistics.qmd
+    - Readings.qmd
     - gitIntro.qmd
     - Git_commands.Qmd
     - Basic_Unix_commands.Qmd

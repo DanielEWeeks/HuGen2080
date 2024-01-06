@@ -1,0 +1,482 @@
+# Readings
+
+##  Course Prepartion 
+
+### Required Readings 
+
+Background reading:
+Ziegler and König - Chapter 1: Molecular Genetics
+Ziegler and König - Chapter 2: Formal Genetics 
+
+### Henry Stewart Talk:
+
+Genotyping algorithms for genome wide association studies/ Dr. Vincent Plagnol 
+
+
+##  Models, Maps, and Markers 
+
+### Learning Objectives
+
+*  To review basic genetic models 
+*  To learn about genetic markers 
+
+### Required Readings 
+
+Ziegler and König - Chapter 3: Genetic Markers
+Ziegler and König - Chapter 5: Genetic Map Distances 
+
+### Supplementary Readings 
+
+Elston RC (2000) Introduction and overview. Statistical methods in genetic epidemiology. Stat Methods Med Res 9:527-541
+
+Chapters 1, 2, and 3: Laird NM, Lange C (2011) The Fundamentals of Modern Statistical Genetics. Springer. 
+
+### Henry Stewart Talk:
+
+Introductory genetics for statisticians/ Robert C. Elston. 
+
+
+##  Study Design Overview 
+
+### Learning Objectives
+
+*  To learn the basic principles of study design for genetic studies 
+*  To understand the vital importance of phenotype definition 
+*  To understand the best sample selection strategies 
+
+### Active Learning: 
+
+Intro to Unix & PLINK 
+
+### Henry Stewart Talk:
+
+Designing a genome-wide association study/ Dr. Chris Spencer 
+
+
+##  No class - Martin Luther King Day 
+
+
+##  Familial Aggregation: Recurrence Risk Ratios, Heritability 
+
+### Learning Objectives
+
+*  To learn aggregation analysis 
+*  To learn how to estimate recurrence risk ratios 
+*  To review the concept of heritability 
+
+### Active Learning: 
+
+Student Presentation 
+
+### Required Readings 
+
+Ziegler and König - Chapter 6: Familiality, Heritability, and Segregation Analysis 
+
+### Supplementary Readings 
+
+Chapter 4: Laird NM, Lange C (2011) The Fundamentals of Modern Statistical Genetics. Springer. 
+
+### Henry Stewart Talk:
+
+Heritability and its uses/ Doug Speed.
+
+Inferring relatedness/ Prof. Emmanuelle Génin 
+
+
+##  Familial Aggregation: Segregation Analysis, Ascertainment 
+
+### Learning Objectives
+
+*  To learn about segregation analysis 
+*  To understand how to take ascertainment into account in the segregation models 
+*  To formulate testable hypotheses about genetic models 
+
+### Active Learning: 
+
+SOLAR heritability computer lab 
+
+### Required Readings 
+
+Ziegler and König - Chapter 6: Familiality, Heritability, and Segregation Analysis 
+
+
+##  LOD scores: Model-based Linkage Analysis 
+
+### Learning Objectives
+
+*  To learn how to compute LOD scores 
+*  To learn about different map functions, and the distinction between genetic and physical maps 
+*  To formulate testable hypotheses about linkage 
+
+### Active Learning: 
+
+Student Presentation 
+
+### Required Readings 
+
+Ziegler and König - Chapter 7: Model-based Linkage Analysis 
+
+### Supplementary Readings 
+
+Chapters 5 and 6: Laird NM, Lange C (2011) The Fundamentals of Modern Statistical Genetics. Springer. 
+
+### Henry Stewart Talk:
+
+Linkage and sequence analysis in families/ Christopher Amos. 
+
+
+##  Non-parametric methods 
+
+### Learning Objectives
+
+*  To learn how to carry out non-parametric linkage analyses 
+*  To understand the motivation behind non-parametric linkage analysis approaches 
+
+### Active Learning: 
+
+Merlin computer lab 
+
+### Required Readings 
+
+Ziegler and König - Chapter 8: Model-free Linkage Analysis for Dichotomous Traits 
+
+### Supplementary Readings 
+
+Shih MC, Whittemore AS (2001) Allele-sharing among affected relatives: non-parametric methods for identifying genes. Stat Methods Med Res 10:27-55 
+
+
+##  Association: Case/Control & Quantitative Traits 
+
+### Learning Objectives
+
+*  To formulate testable hypotheses about association 
+*  To understand and apply various case/control association tests 
+*  To understand allele-based and genotype-based association tests, and trend tests. 
+
+### Active Learning: 
+
+Student Presentation 
+
+### Required Readings 
+
+Ziegler and König - Chapter 10: Fundamental Concepts of Association Analysis
+Ziegler and König - Chapter 11: Association Analysis with Unrelated Individuals 
+
+### Supplementary Readings 
+
+Chapter 7: Laird NM, Lange C (2011) The Fundamentals of Modern Statistical Genetics. Springer.
+
+Cardon LR, Bell JI (2001) Association study designs for complex diseases. Nat Rev Genet 2:91-99.
+
+Balding DJ (2006) A tutorial on statistical methods for population association studies. Nat Rev Genet 7:781-791 
+
+### Henry Stewart Talk:
+
+Introduction to genetic association analysis/ Jenny Barrett.
+
+Statistical tests for association/ Dr. Andrew Morris 
+
+
+##  Association: Family-based and Haplotype-based 
+
+### Learning Objectives
+
+*  To learn how to analyze family data for association 
+*  To learn how to test haplotypes for association 
+*  To understand sparsity issues involved in haplotyped-based tests 
+
+### Active Learning: 
+
+PLINK computer lab 
+
+### Required Readings 
+
+Ziegler and König - Chapter 12: Association Analysis in Families 
+
+### Supplementary Readings 
+
+Chapter 9 & Chapter 10, Section 2: Laird NM, Lange C (2011) The Fundamentals of Modern Statistical Genetics. Springer.
+
+Ott J, Kamatani Y, Lathrop M (2011) Family-based designs for genome-wide association studies. Nat Rev Genet 12:465-474 
+
+
+##  Multiple testing 
+
+### Learning Objectives
+
+*  To understand how to adjust for multiple testing 
+
+### Active Learning: 
+
+Student Presentation 
+
+### Required Readings 
+
+Ziegler and König - Chapter 14, Section 14.4: Multiple Testing 
+
+### Supplementary Readings 
+
+Chapter 10, Section 1: Laird NM, Lange C (2011) The Fundamentals of Modern Statistical Genetics. Springer. 
+
+### Henry Stewart Talk:
+
+Assessing significance in genome-wide studies/ Dr. David Evans 
+
+
+##  Power to detect Association: Linkage vs. Association 
+
+### Learning Objectives
+
+*  To learn how to compute power for detecting association 
+*  To compare and contrast linkage and association 
+*  To understand the relative strengths and weaknesses of linkage and association tests 
+
+### Active Learning: 
+
+Student Presentation 
+
+### Supplementary Readings 
+
+Clerget-Darpoux F, Elston RC (2007) Are linkage analysis and the collection of family data dead? Prospects for family studies in the age of genome-wide association. Hum Hered 64:91-96 
+
+
+##  Rare variants 
+
+### Learning Objectives
+
+*  To learn how to test rare variants for association 
+*  To learn about burden tests, collapsing or grouping tests, weighted sum tests, and variable threshold tests. 
+
+### Active Learning: 
+
+Student Presentation 
+
+### Supplementary Readings 
+
+Asimit J, Zeggini E (2010) Rare variant association analysis methods for complex traits. Annu Rev Genet 44:293-308
+
+Bansal V, Libiger O, Torkamani A, Schork NJ (2010) Statistical analysis strategies for association studies involving rare variants. Nat Rev Genet 11:773-785 
+
+
+##  Methods for correlated data: LME, GEE, Score 
+
+### Learning Objectives
+
+*  To learn about linear mixed effects models, generalized estimating equations, and score tests 
+*  To learn how to properly model relatedness while testing genetic hypotheses 
+
+### Active Learning: 
+
+Student Presentation 
+
+### Required Readings 
+
+Sul JH, Martin LS, Eskin E. Population structure in genetic studies: Confounding factors and mixed models. PLoS Genet. 2018; 14(12):e1007309. doi:10.1371/journal.pgen.1007309 
+
+
+##  Bayesian Methods in Human Genetics 
+
+### Learning Objectives
+
+*  To learn about Bayesian methods in human genetics 
+*  To understand Bayesian principles 
+
+### Active Learning: 
+
+Student Presentation 
+
+### Required Readings 
+
+Stephens M, Balding DJ. Bayesian statistical methods for genetic association studies. Nat Rev Genet. 2009 Oct;10(10):681-90. doi: 10.1038/nrg2615. Review.  PubMed PMID: 19763151. 
+
+### Supplementary Readings 
+
+Wakefield J. Bayes factors for Genome-wide association studies: Comparison with P-values. Genetic Epidemiology. 2009;33(1):79–86. DOI: https://doi.org/10.1002/gepi.20359 
+
+
+##  Review for Mid-term exam 
+
+
+##  Mid-term exam 
+
+
+##  Gene x Gene interaction, vQTLs 
+
+### Learning Objectives
+
+*  To learn how to test for gene x gene interaction 
+*  To formulate testable hypotheses about gene x gene interaction 
+
+### Required Readings 
+
+Cordell HJ (2009) Detecting gene-gene interactions that underlie human diseases. Nat Rev Genet 10:392-404 
+
+### Supplementary Readings 
+
+
+
+Gilbert-Diamond D, Moore JH (2011) Analysis of gene-gene interactions. Curr Protoc Hum Genet Chapter 1:Unit1 14 
+
+
+##  Gene x Environment interaction 
+
+### Learning Objectives
+
+*  To learn how to test for gene x environment interaction 
+*  To formulate testable hypotheses about gene x environment interaction 
+
+### Active Learning: 
+
+Student Presentation 
+
+### Required Readings 
+
+Thomas D (2010) Gene--environment-wide association studies: emerging approaches. Nat Rev Genet 11:259-272 
+
+### Supplementary Readings 
+
+Chapter 10, Section 3: Laird NM, Lange C (2011) The Fundamentals of Modern Statistical Genetics. Springer.
+
+Ottman R (1990) An epidemiologic approach to gene-environment interaction. Genet Epidemiol 7:177-185
+
+ 
+
+### Henry Stewart Talk:
+
+Statistical issues in epidemiologic studies of gene-environment interaction/ Peter Kraft, Donna Spiegelman.
+
+GxE interactions in genome-wide association studies/ David V. Conti. 
+
+
+##  Spring Recess 
+
+
+##  Spring Recess 
+
+
+##  Special Topic Lecture by Chris McKennan 
+
+
+##  Fine mapping 
+
+### Learning Objectives
+
+*  To learn how to carry out fine mapping 
+*  To understand and apply conditional tests of association 
+
+### Active Learning: 
+
+Student Presentation 
+
+### Required Readings 
+
+Schaid DJ, Chen W, Larson NB. From genome-wide associations to candidate causal variants by statistical fine-mapping. Nature Reviews Genetics. Nature Publishing Group; 2018 Aug 29;19(8):491–504. DOI: https://doi.org/10.1038/s41576-018-0016-z 
+
+### Supplementary Readings 
+
+Cano-Gamez E, Trynka G. From GWAS to Function: Using Functional Genomics to Identify the Mechanisms Underlying Complex Diseases. Front Genet. 2020;11:424. PMID: 32477401 PMCID: PMC7237642 DOI: https://doi.org/10.3389/fgene.2020.00424 
+
+
+##  Meta analysis 
+
+### Learning Objectives
+
+*  To learn about the different types of meta analysis. 
+*  To understand the assumptions made by meta analysis. 
+
+### Required Readings 
+
+Ziegler and König - Chapter 14, Section 14.5: Accumulating Data from Genome-wide Association Studies 
+
+### Henry Stewart Talk:
+
+Winner's curse, replication and meta-analysis/ Frank Dudbridge.
+
+Meta-analysis in genome-wide association studies: application to type 2 diabetes/ Dr. Eleftheria Zeggini 
+
+
+##  Methods for multivariate phenotypes 
+
+### Learning Objectives
+
+*  To learn about methods for analyzing multivariate phenotypes 
+*  To learn how to properly account for correlation among phenotypes 
+
+### Active Learning: 
+
+Student Presentation 
+
+
+##  Heritability from GWAS 
+
+### Learning Objectives
+
+*  To learn how to estimate heritability using unrelated samples. 
+*  To understand polygenicity. 
+
+### Active Learning: 
+
+Student Presentation 
+
+### Henry Stewart Talk:
+
+Heritability and its uses/ Doug Speed. 
+
+
+##  LDscore regression 
+
+### Learning Objectives
+
+*  To understand the principles of LDscore regression 
+*  To understand polygenicity. 
+
+### Active Learning: 
+
+Student Presentation 
+
+
+##  Mendelian Randomization 
+
+### Learning Objectives
+
+*  To understand the basic principles of Mendelian Randomization. 
+*  To formulate testable hypotheses about causation using Mendelian Randomization approaches. 
+
+### Active Learning: 
+
+Student Presentation 
+
+### Henry Stewart Talk:
+
+Causal inference in genetic epidemiology: Mendelian randomization and beyond / Krista Fischer. 
+
+
+##  Genetic Risk Scores & Polygenic Risk Scores & Genomic Prediction 
+
+### Learning Objectives
+
+*  To understand how to construct and use genetic risk scores. 
+*  To understand the limits of genomic predication. 
+
+### Active Learning: 
+
+Student Presentation 
+
+
+##  Special Topic Lecture by Lacey Heinsberg 
+
+### Required Readings 
+
+Heinze G, Wallisch C, Dunkler D. Variable selection – A review and recommendations for the practicing statistician. Biometrical Journal. 2018;60(3):431–449. DOI: https://doi.org/10.1002/bimj.201700067 
+
+
+##  Special Topic Lecture by Jenna Carlson 
+
+
+##  Review for final exam 
+
+
+##  Final exam 
+
+
+
