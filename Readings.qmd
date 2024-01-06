@@ -4,8 +4,8 @@
 
 ### Required Readings 
 
-Background reading:
-Ziegler and König - Chapter 1: Molecular Genetics
+Background reading:       
+Ziegler and König - Chapter 1: Molecular Genetics      
 Ziegler and König - Chapter 2: Formal Genetics 
 
 ### Henry Stewart Talk:
@@ -22,7 +22,7 @@ Genotyping algorithms for genome wide association studies/ Dr. Vincent Plagnol
 
 ### Required Readings 
 
-Ziegler and König - Chapter 3: Genetic Markers
+Ziegler and König - Chapter 3: Genetic Markers      
 Ziegler and König - Chapter 5: Genetic Map Distances 
 
 ### Supplementary Readings 
@@ -159,7 +159,7 @@ Student Presentation
 
 ### Required Readings 
 
-Ziegler and König - Chapter 10: Fundamental Concepts of Association Analysis
+Ziegler and König - Chapter 10: Fundamental Concepts of Association Analysis       
 Ziegler and König - Chapter 11: Association Analysis with Unrelated Individuals 
 
 ### Supplementary Readings 
@@ -312,8 +312,6 @@ Wakefield J. Bayes factors for Genome-wide association studies: Comparison with 
 Cordell HJ (2009) Detecting gene-gene interactions that underlie human diseases. Nat Rev Genet 10:392-404 
 
 ### Supplementary Readings 
-
-
 
 Gilbert-Diamond D, Moore JH (2011) Analysis of gene-gene interactions. Curr Protoc Hum Genet Chapter 1:Unit1 14 
 
