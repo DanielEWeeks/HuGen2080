@@ -32,14 +32,14 @@
     "href": "Readings.html#course-preparation",
     "title": "3  Readings",
     "section": "3.1 Course Preparation",
-    "text": "3.1 Course Preparation\n\n3.1.1 Required Readings\nBackground reading: Ziegler and König - Chapter 1: Molecular Genetics Ziegler and König - Chapter 2: Formal Genetics\n\n\n3.1.2 Henry Stewart Talk:\nGenotyping algorithms for genome wide association studies/ Dr. Vincent Plagnol"
+    "text": "3.1 Course Preparation\n\n3.1.1 Required Readings\nBackground reading:\nZiegler and König - Chapter 1: Molecular Genetics\nZiegler and König - Chapter 2: Formal Genetics\n\n\n3.1.2 Henry Stewart Talk:\nGenotyping algorithms for genome wide association studies/ Dr. Vincent Plagnol"
   },
   {
     "objectID": "Readings.html#models-maps-and-markers",
     "href": "Readings.html#models-maps-and-markers",
     "title": "3  Readings",
     "section": "3.2 Models, Maps, and Markers",
-    "text": "3.2 Models, Maps, and Markers\n\n3.2.1 Learning Objectives\n\nTo review basic genetic models\nTo learn about genetic markers\n\n\n\n3.2.2 Required Readings\nZiegler and König - Chapter 3: Genetic Markers Ziegler and König - Chapter 5: Genetic Map Distances\n\n\n3.2.3 Supplementary Readings\nElston RC (2000) Introduction and overview. Statistical methods in genetic epidemiology. Stat Methods Med Res 9:527-541\nChapters 1, 2, and 3: Laird NM, Lange C (2011) The Fundamentals of Modern Statistical Genetics. Springer.\n\n\n3.2.4 Henry Stewart Talk:\nIntroductory genetics for statisticians/ Robert C. Elston."
+    "text": "3.2 Models, Maps, and Markers\n\n3.2.1 Learning Objectives\n\nTo review basic genetic models\nTo learn about genetic markers\n\n\n\n3.2.2 Required Readings\nZiegler and König - Chapter 3: Genetic Markers\nZiegler and König - Chapter 5: Genetic Map Distances\n\n\n3.2.3 Supplementary Readings\nElston RC (2000) Introduction and overview. Statistical methods in genetic epidemiology. Stat Methods Med Res 9:527-541\nChapters 1, 2, and 3: Laird NM, Lange C (2011) The Fundamentals of Modern Statistical Genetics. Springer.\n\n\n3.2.4 Henry Stewart Talk:\nIntroductory genetics for statisticians/ Robert C. Elston."
   },
   {
     "objectID": "Readings.html#study-design-overview",
@@ -88,7 +88,7 @@
     "href": "Readings.html#association-casecontrol-quantitative-traits",
     "title": "3  Readings",
     "section": "3.9 Association: Case/Control & Quantitative Traits",
-    "text": "3.9 Association: Case/Control & Quantitative Traits\n\n3.9.1 Learning Objectives\n\nTo formulate testable hypotheses about association\nTo understand and apply various case/control association tests\nTo understand allele-based and genotype-based association tests, and trend tests.\n\n\n\n3.9.2 Active Learning:\nStudent Presentation\n\n\n3.9.3 Required Readings\nZiegler and König - Chapter 10: Fundamental Concepts of Association Analysis Ziegler and König - Chapter 11: Association Analysis with Unrelated Individuals\n\n\n3.9.4 Supplementary Readings\nChapter 7: Laird NM, Lange C (2011) The Fundamentals of Modern Statistical Genetics. Springer.\nCardon LR, Bell JI (2001) Association study designs for complex diseases. Nat Rev Genet 2:91-99.\nBalding DJ (2006) A tutorial on statistical methods for population association studies. Nat Rev Genet 7:781-791\n\n\n3.9.5 Henry Stewart Talk:\nIntroduction to genetic association analysis/ Jenny Barrett.\nStatistical tests for association/ Dr. Andrew Morris"
+    "text": "3.9 Association: Case/Control & Quantitative Traits\n\n3.9.1 Learning Objectives\n\nTo formulate testable hypotheses about association\nTo understand and apply various case/control association tests\nTo understand allele-based and genotype-based association tests, and trend tests.\n\n\n\n3.9.2 Active Learning:\nStudent Presentation\n\n\n3.9.3 Required Readings\nZiegler and König - Chapter 10: Fundamental Concepts of Association Analysis\nZiegler and König - Chapter 11: Association Analysis with Unrelated Individuals\n\n\n3.9.4 Supplementary Readings\nChapter 7: Laird NM, Lange C (2011) The Fundamentals of Modern Statistical Genetics. Springer.\nCardon LR, Bell JI (2001) Association study designs for complex diseases. Nat Rev Genet 2:91-99.\nBalding DJ (2006) A tutorial on statistical methods for population association studies. Nat Rev Genet 7:781-791\n\n\n3.9.5 Henry Stewart Talk:\nIntroduction to genetic association analysis/ Jenny Barrett.\nStatistical tests for association/ Dr. Andrew Morris"
   },
   {
     "objectID": "Readings.html#association-family-based-and-haplotype-based",
