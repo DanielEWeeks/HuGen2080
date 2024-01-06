@@ -28,11 +28,11 @@
     "text": "2.2 GitHub Classroom\nAs GitHub Classroom will be used to distribute course materials and to submit assignments, it would be best if you get git working on your own computer. The easiest way to do this is to install RStudio, R, and git on your computer.\nPlease follow the detailed instructions in https://github.com/jfiksel/github-classroom-for-students\nIn particular, see Step 5 re generating an ssh key so you don’t need to login every time."
   },
   {
-    "objectID": "Readings.html#course-prepartion",
-    "href": "Readings.html#course-prepartion",
+    "objectID": "Readings.html#course-preparation",
+    "href": "Readings.html#course-preparation",
     "title": "3  Readings",
-    "section": "3.1 Course Prepartion",
-    "text": "3.1 Course Prepartion\n\n3.1.1 Required Readings\nBackground reading: Ziegler and König - Chapter 1: Molecular Genetics Ziegler and König - Chapter 2: Formal Genetics\n\n\n3.1.2 Henry Stewart Talk:\nGenotyping algorithms for genome wide association studies/ Dr. Vincent Plagnol"
+    "section": "3.1 Course Preparation",
+    "text": "3.1 Course Preparation\n\n3.1.1 Required Readings\nBackground reading: Ziegler and König - Chapter 1: Molecular Genetics Ziegler and König - Chapter 2: Formal Genetics\n\n\n3.1.2 Henry Stewart Talk:\nGenotyping algorithms for genome wide association studies/ Dr. Vincent Plagnol"
   },
   {
     "objectID": "Readings.html#models-maps-and-markers",
