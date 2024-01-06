@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HuGen2080 book - 4&nbsp; Git Commands</title>
+<title>HuGen2080 book - 5&nbsp; Git Commands</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Git_commands.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git Commands</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Git_commands.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Git Commands</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -119,26 +119,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./Readings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Readings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./gitIntro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">GitHub</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">GitHub</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Git_commands.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git Commands</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Git Commands</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Basic_Unix_commands.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -157,19 +163,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#git---best-practices" id="toc-git---best-practices" class="nav-link active" data-scroll-target="#git---best-practices"><span class="header-section-number">4.1</span> git - best practices</a></li>
-  <li><a href="#outline-of-essential-git-commands" id="toc-outline-of-essential-git-commands" class="nav-link" data-scroll-target="#outline-of-essential-git-commands"><span class="header-section-number">4.2</span> Outline of essential Git commands</a>
+  <li><a href="#git---best-practices" id="toc-git---best-practices" class="nav-link active" data-scroll-target="#git---best-practices"><span class="header-section-number">5.1</span> git - best practices</a></li>
+  <li><a href="#outline-of-essential-git-commands" id="toc-outline-of-essential-git-commands" class="nav-link" data-scroll-target="#outline-of-essential-git-commands"><span class="header-section-number">5.2</span> Outline of essential Git commands</a>
   <ul class="collapse">
-  <li><a href="#initialization-and-configuration" id="toc-initialization-and-configuration" class="nav-link" data-scroll-target="#initialization-and-configuration"><span class="header-section-number">4.2.1</span> Initialization and Configuration</a></li>
-  <li><a href="#basic-workflow" id="toc-basic-workflow" class="nav-link" data-scroll-target="#basic-workflow"><span class="header-section-number">4.2.2</span> Basic Workflow</a></li>
-  <li><a href="#remote-repositories" id="toc-remote-repositories" class="nav-link" data-scroll-target="#remote-repositories"><span class="header-section-number">4.2.3</span> Remote Repositories</a></li>
-  <li><a href="#status-and-changes" id="toc-status-and-changes" class="nav-link" data-scroll-target="#status-and-changes"><span class="header-section-number">4.2.4</span> Status and Changes</a></li>
-  <li><a href="#history-and-logs" id="toc-history-and-logs" class="nav-link" data-scroll-target="#history-and-logs"><span class="header-section-number">4.2.5</span> History and Logs</a></li>
-  <li><a href="#ignoring-files" id="toc-ignoring-files" class="nav-link" data-scroll-target="#ignoring-files"><span class="header-section-number">4.2.6</span> Ignoring Files</a></li>
-  <li><a href="#branching" id="toc-branching" class="nav-link" data-scroll-target="#branching"><span class="header-section-number">4.2.7</span> Branching</a></li>
-  <li><a href="#undoing-changes" id="toc-undoing-changes" class="nav-link" data-scroll-target="#undoing-changes"><span class="header-section-number">4.2.8</span> Undoing Changes</a></li>
-  <li><a href="#tagging" id="toc-tagging" class="nav-link" data-scroll-target="#tagging"><span class="header-section-number">4.2.9</span> Tagging</a></li>
-  <li><a href="#stashing" id="toc-stashing" class="nav-link" data-scroll-target="#stashing"><span class="header-section-number">4.2.10</span> Stashing</a></li>
+  <li><a href="#initialization-and-configuration" id="toc-initialization-and-configuration" class="nav-link" data-scroll-target="#initialization-and-configuration"><span class="header-section-number">5.2.1</span> Initialization and Configuration</a></li>
+  <li><a href="#basic-workflow" id="toc-basic-workflow" class="nav-link" data-scroll-target="#basic-workflow"><span class="header-section-number">5.2.2</span> Basic Workflow</a></li>
+  <li><a href="#remote-repositories" id="toc-remote-repositories" class="nav-link" data-scroll-target="#remote-repositories"><span class="header-section-number">5.2.3</span> Remote Repositories</a></li>
+  <li><a href="#status-and-changes" id="toc-status-and-changes" class="nav-link" data-scroll-target="#status-and-changes"><span class="header-section-number">5.2.4</span> Status and Changes</a></li>
+  <li><a href="#history-and-logs" id="toc-history-and-logs" class="nav-link" data-scroll-target="#history-and-logs"><span class="header-section-number">5.2.5</span> History and Logs</a></li>
+  <li><a href="#ignoring-files" id="toc-ignoring-files" class="nav-link" data-scroll-target="#ignoring-files"><span class="header-section-number">5.2.6</span> Ignoring Files</a></li>
+  <li><a href="#branching" id="toc-branching" class="nav-link" data-scroll-target="#branching"><span class="header-section-number">5.2.7</span> Branching</a></li>
+  <li><a href="#undoing-changes" id="toc-undoing-changes" class="nav-link" data-scroll-target="#undoing-changes"><span class="header-section-number">5.2.8</span> Undoing Changes</a></li>
+  <li><a href="#tagging" id="toc-tagging" class="nav-link" data-scroll-target="#tagging"><span class="header-section-number">5.2.9</span> Tagging</a></li>
+  <li><a href="#stashing" id="toc-stashing" class="nav-link" data-scroll-target="#stashing"><span class="header-section-number">5.2.10</span> Stashing</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -179,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git Commands</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Git Commands</span></h1>
 </div>
 
 
@@ -194,8 +200,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="git---best-practices" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="git---best-practices"><span class="header-section-number">4.1</span> git - best practices</h2>
+<section id="git---best-practices" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="git---best-practices"><span class="header-section-number">5.1</span> git - best practices</h2>
 <p>pull - work - commit - pull - push</p>
 <ul>
 <li><code>git pull</code></li>
@@ -206,25 +212,25 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Pay attention to any error messages.</p>
 </section>
-<section id="outline-of-essential-git-commands" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="outline-of-essential-git-commands"><span class="header-section-number">4.2</span> Outline of essential Git commands</h2>
+<section id="outline-of-essential-git-commands" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="outline-of-essential-git-commands"><span class="header-section-number">5.2</span> Outline of essential Git commands</h2>
 <p>Here’s an outline of essential Git commands, initially created by ChatGPT:</p>
-<section id="initialization-and-configuration" class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="initialization-and-configuration"><span class="header-section-number">4.2.1</span> Initialization and Configuration</h3>
+<section id="initialization-and-configuration" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="initialization-and-configuration"><span class="header-section-number">5.2.1</span> Initialization and Configuration</h3>
 <ul>
 <li><code>git init</code>: Initializes a new Git repository in the current directory.</li>
 <li><code>git config</code>: Configure Git settings.</li>
 </ul>
 </section>
-<section id="basic-workflow" class="level3" data-number="4.2.2">
-<h3 data-number="4.2.2" class="anchored" data-anchor-id="basic-workflow"><span class="header-section-number">4.2.2</span> Basic Workflow</h3>
+<section id="basic-workflow" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="basic-workflow"><span class="header-section-number">5.2.2</span> Basic Workflow</h3>
 <ul>
 <li><code>git add</code>: Stage changes.</li>
 <li><code>git commit -m "message"</code>: Commits staged changes with a descriptive message.</li>
 </ul>
 </section>
-<section id="remote-repositories" class="level3" data-number="4.2.3">
-<h3 data-number="4.2.3" class="anchored" data-anchor-id="remote-repositories"><span class="header-section-number">4.2.3</span> Remote Repositories</h3>
+<section id="remote-repositories" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="remote-repositories"><span class="header-section-number">5.2.3</span> Remote Repositories</h3>
 <ul>
 <li><code>git clone</code>: Clones a remote repository to your local machine.</li>
 <li><code>git push</code>: Send local changes to remote repository.</li>
@@ -232,49 +238,49 @@ ul.task-list li input[type="checkbox"] {
 <li><code>git remote</code>: Manage remote repositories.</li>
 </ul>
 </section>
-<section id="status-and-changes" class="level3" data-number="4.2.4">
-<h3 data-number="4.2.4" class="anchored" data-anchor-id="status-and-changes"><span class="header-section-number">4.2.4</span> Status and Changes</h3>
+<section id="status-and-changes" class="level3" data-number="5.2.4">
+<h3 data-number="5.2.4" class="anchored" data-anchor-id="status-and-changes"><span class="header-section-number">5.2.4</span> Status and Changes</h3>
 <ul>
 <li><code>git status</code>: Shows the current state of your working directory.</li>
 <li><code>git diff</code>: Displays changes between working directory and the last commit.</li>
 </ul>
 </section>
-<section id="history-and-logs" class="level3" data-number="4.2.5">
-<h3 data-number="4.2.5" class="anchored" data-anchor-id="history-and-logs"><span class="header-section-number">4.2.5</span> History and Logs</h3>
+<section id="history-and-logs" class="level3" data-number="5.2.5">
+<h3 data-number="5.2.5" class="anchored" data-anchor-id="history-and-logs"><span class="header-section-number">5.2.5</span> History and Logs</h3>
 <ul>
 <li><code>git log</code>: View commit history.</li>
 <li><code>git log --oneline</code>: Compact commit history.</li>
 </ul>
 </section>
-<section id="ignoring-files" class="level3" data-number="4.2.6">
-<h3 data-number="4.2.6" class="anchored" data-anchor-id="ignoring-files"><span class="header-section-number">4.2.6</span> Ignoring Files</h3>
+<section id="ignoring-files" class="level3" data-number="5.2.6">
+<h3 data-number="5.2.6" class="anchored" data-anchor-id="ignoring-files"><span class="header-section-number">5.2.6</span> Ignoring Files</h3>
 <ul>
 <li>Create <code>.gitignore</code> file.</li>
 </ul>
 </section>
-<section id="branching" class="level3" data-number="4.2.7">
-<h3 data-number="4.2.7" class="anchored" data-anchor-id="branching"><span class="header-section-number">4.2.7</span> Branching</h3>
+<section id="branching" class="level3" data-number="5.2.7">
+<h3 data-number="5.2.7" class="anchored" data-anchor-id="branching"><span class="header-section-number">5.2.7</span> Branching</h3>
 <ul>
 <li><code>git branch</code>: List/create branches.</li>
 <li><code>git checkout</code>: Switch branches.</li>
 <li><code>git merge</code>: Merge branches.</li>
 </ul>
 </section>
-<section id="undoing-changes" class="level3" data-number="4.2.8">
-<h3 data-number="4.2.8" class="anchored" data-anchor-id="undoing-changes"><span class="header-section-number">4.2.8</span> Undoing Changes</h3>
+<section id="undoing-changes" class="level3" data-number="5.2.8">
+<h3 data-number="5.2.8" class="anchored" data-anchor-id="undoing-changes"><span class="header-section-number">5.2.8</span> Undoing Changes</h3>
 <ul>
 <li><code>git reset</code>: Unstage or reset changes.</li>
 <li><code>git revert</code>: Create undoing commits.</li>
 </ul>
 </section>
-<section id="tagging" class="level3" data-number="4.2.9">
-<h3 data-number="4.2.9" class="anchored" data-anchor-id="tagging"><span class="header-section-number">4.2.9</span> Tagging</h3>
+<section id="tagging" class="level3" data-number="5.2.9">
+<h3 data-number="5.2.9" class="anchored" data-anchor-id="tagging"><span class="header-section-number">5.2.9</span> Tagging</h3>
 <ul>
 <li><code>git tag</code>: Create and manage tags.</li>
 </ul>
 </section>
-<section id="stashing" class="level3" data-number="4.2.10">
-<h3 data-number="4.2.10" class="anchored" data-anchor-id="stashing"><span class="header-section-number">4.2.10</span> Stashing</h3>
+<section id="stashing" class="level3" data-number="5.2.10">
+<h3 data-number="5.2.10" class="anchored" data-anchor-id="stashing"><span class="header-section-number">5.2.10</span> Stashing</h3>
 <ul>
 <li><code>git stash</code>: Temporarily store changes.</li>
 </ul>
@@ -536,12 +542,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./gitIntro.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">GitHub</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">GitHub</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./Basic_Unix_commands.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

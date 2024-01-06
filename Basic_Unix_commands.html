@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HuGen2080 book - 5&nbsp; Basic Shell Commands</title>
+<title>HuGen2080 book - 6&nbsp; Basic Shell Commands</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Basic_Unix_commands.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Basic_Unix_commands.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -119,26 +119,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./Readings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Readings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./gitIntro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">GitHub</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">GitHub</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Git_commands.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git Commands</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Git Commands</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Basic_Unix_commands.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -157,28 +163,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#acknowledgment-and-license" id="toc-acknowledgment-and-license" class="nav-link active" data-scroll-target="#acknowledgment-and-license"><span class="header-section-number">5.1</span> Acknowledgment and License</a></li>
-  <li><a href="#shell-basics" id="toc-shell-basics" class="nav-link" data-scroll-target="#shell-basics"><span class="header-section-number">5.2</span> Shell Basics:</a></li>
-  <li><a href="#creating-things" id="toc-creating-things" class="nav-link" data-scroll-target="#creating-things"><span class="header-section-number">5.3</span> Creating Things:</a>
+  <li><a href="#acknowledgment-and-license" id="toc-acknowledgment-and-license" class="nav-link active" data-scroll-target="#acknowledgment-and-license"><span class="header-section-number">6.1</span> Acknowledgment and License</a></li>
+  <li><a href="#shell-basics" id="toc-shell-basics" class="nav-link" data-scroll-target="#shell-basics"><span class="header-section-number">6.2</span> Shell Basics:</a></li>
+  <li><a href="#creating-things" id="toc-creating-things" class="nav-link" data-scroll-target="#creating-things"><span class="header-section-number">6.3</span> Creating Things:</a>
   <ul class="collapse">
-  <li><a href="#how-to-create-new-files-and-directories.." id="toc-how-to-create-new-files-and-directories.." class="nav-link" data-scroll-target="#how-to-create-new-files-and-directories.."><span class="header-section-number">5.3.1</span> How to create new files and directories..</a></li>
-  <li><a href="#how-to-delete-files-and-directories" id="toc-how-to-delete-files-and-directories" class="nav-link" data-scroll-target="#how-to-delete-files-and-directories"><span class="header-section-number">5.3.2</span> How to delete files and directories…</a></li>
-  <li><a href="#how-to-copy-and-rename-files-and-directories" id="toc-how-to-copy-and-rename-files-and-directories" class="nav-link" data-scroll-target="#how-to-copy-and-rename-files-and-directories"><span class="header-section-number">5.3.3</span> How to copy and rename files and directories…</a></li>
+  <li><a href="#how-to-create-new-files-and-directories.." id="toc-how-to-create-new-files-and-directories.." class="nav-link" data-scroll-target="#how-to-create-new-files-and-directories.."><span class="header-section-number">6.3.1</span> How to create new files and directories..</a></li>
+  <li><a href="#how-to-delete-files-and-directories" id="toc-how-to-delete-files-and-directories" class="nav-link" data-scroll-target="#how-to-delete-files-and-directories"><span class="header-section-number">6.3.2</span> How to delete files and directories…</a></li>
+  <li><a href="#how-to-copy-and-rename-files-and-directories" id="toc-how-to-copy-and-rename-files-and-directories" class="nav-link" data-scroll-target="#how-to-copy-and-rename-files-and-directories"><span class="header-section-number">6.3.3</span> How to copy and rename files and directories…</a></li>
   </ul></li>
-  <li><a href="#pipes-and-filters" id="toc-pipes-and-filters" class="nav-link" data-scroll-target="#pipes-and-filters"><span class="header-section-number">5.4</span> Pipes and Filters</a>
+  <li><a href="#pipes-and-filters" id="toc-pipes-and-filters" class="nav-link" data-scroll-target="#pipes-and-filters"><span class="header-section-number">6.4</span> Pipes and Filters</a>
   <ul class="collapse">
-  <li><a href="#how-to-use-wildcards-to-match-filenames" id="toc-how-to-use-wildcards-to-match-filenames" class="nav-link" data-scroll-target="#how-to-use-wildcards-to-match-filenames"><span class="header-section-number">5.4.1</span> How to use wildcards to match filenames…</a></li>
-  <li><a href="#how-to-redirect-to-a-file-and-get-input-from-a-file" id="toc-how-to-redirect-to-a-file-and-get-input-from-a-file" class="nav-link" data-scroll-target="#how-to-redirect-to-a-file-and-get-input-from-a-file"><span class="header-section-number">5.4.2</span> How to redirect to a file and get input from a file …</a></li>
+  <li><a href="#how-to-use-wildcards-to-match-filenames" id="toc-how-to-use-wildcards-to-match-filenames" class="nav-link" data-scroll-target="#how-to-use-wildcards-to-match-filenames"><span class="header-section-number">6.4.1</span> How to use wildcards to match filenames…</a></li>
+  <li><a href="#how-to-redirect-to-a-file-and-get-input-from-a-file" id="toc-how-to-redirect-to-a-file-and-get-input-from-a-file" class="nav-link" data-scroll-target="#how-to-redirect-to-a-file-and-get-input-from-a-file"><span class="header-section-number">6.4.2</span> How to redirect to a file and get input from a file …</a></li>
   </ul></li>
-  <li><a href="#how-to-repeat-operations-using-a-loop" id="toc-how-to-repeat-operations-using-a-loop" class="nav-link" data-scroll-target="#how-to-repeat-operations-using-a-loop"><span class="header-section-number">5.5</span> How to repeat operations using a loop…</a>
+  <li><a href="#how-to-repeat-operations-using-a-loop" id="toc-how-to-repeat-operations-using-a-loop" class="nav-link" data-scroll-target="#how-to-repeat-operations-using-a-loop"><span class="header-section-number">6.5</span> How to repeat operations using a loop…</a>
   <ul class="collapse">
-  <li><a href="#for-loop" id="toc-for-loop" class="nav-link" data-scroll-target="#for-loop"><span class="header-section-number">5.5.1</span> For loop</a></li>
-  <li><a href="#while-loop" id="toc-while-loop" class="nav-link" data-scroll-target="#while-loop"><span class="header-section-number">5.5.2</span> While Loop</a></li>
+  <li><a href="#for-loop" id="toc-for-loop" class="nav-link" data-scroll-target="#for-loop"><span class="header-section-number">6.5.1</span> For loop</a></li>
+  <li><a href="#while-loop" id="toc-while-loop" class="nav-link" data-scroll-target="#while-loop"><span class="header-section-number">6.5.2</span> While Loop</a></li>
   </ul></li>
-  <li><a href="#finding-things" id="toc-finding-things" class="nav-link" data-scroll-target="#finding-things"><span class="header-section-number">5.6</span> Finding Things</a>
+  <li><a href="#finding-things" id="toc-finding-things" class="nav-link" data-scroll-target="#finding-things"><span class="header-section-number">6.6</span> Finding Things</a>
   <ul class="collapse">
-  <li><a href="#how-to-select-lines-matching-patterns-in-text-files" id="toc-how-to-select-lines-matching-patterns-in-text-files" class="nav-link" data-scroll-target="#how-to-select-lines-matching-patterns-in-text-files"><span class="header-section-number">5.6.1</span> How to select lines matching patterns in text files…</a></li>
-  <li><a href="#how-to-find-files-with-certain-properties" id="toc-how-to-find-files-with-certain-properties" class="nav-link" data-scroll-target="#how-to-find-files-with-certain-properties"><span class="header-section-number">5.6.2</span> How to find files with certain properties…</a></li>
+  <li><a href="#how-to-select-lines-matching-patterns-in-text-files" id="toc-how-to-select-lines-matching-patterns-in-text-files" class="nav-link" data-scroll-target="#how-to-select-lines-matching-patterns-in-text-files"><span class="header-section-number">6.6.1</span> How to select lines matching patterns in text files…</a></li>
+  <li><a href="#how-to-find-files-with-certain-properties" id="toc-how-to-find-files-with-certain-properties" class="nav-link" data-scroll-target="#how-to-find-files-with-certain-properties"><span class="header-section-number">6.6.2</span> How to find files with certain properties…</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -188,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Basic Shell Commands</span></h1>
 </div>
 
 
@@ -203,15 +209,15 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="acknowledgment-and-license" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="acknowledgment-and-license"><span class="header-section-number">5.1</span> Acknowledgment and License</h2>
+<section id="acknowledgment-and-license" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="acknowledgment-and-license"><span class="header-section-number">6.1</span> Acknowledgment and License</h2>
 <p>This chapter is a derivative of the <a href="https://github.com/swcarpentry/DEPRECATED-boot-camps/blob/master/shell/shell_cheatsheet.md">Basic Shell Commands</a> cheat sheet from the <a href="https://github.com/swcarpentry/DEPRECATED-boot-camps">DEPRECATED-boot-camps/shell/shell_cheatsheet.md</a> file created by Software Carpentry and is used under the Creative Commons - Attribution license <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
 <p>Minor section numbering and formatting changes were made here.</p>
 <p>This chapter is licensed under the <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> license by Daniel E. Weeks.</p>
 <hr>
 </section>
-<section id="shell-basics" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="shell-basics"><span class="header-section-number">5.2</span> Shell Basics:</h2>
+<section id="shell-basics" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="shell-basics"><span class="header-section-number">6.2</span> Shell Basics:</h2>
 <table class="table">
 <colgroup>
 <col style="width: 12%">
@@ -259,10 +265,10 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="creating-things" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="creating-things"><span class="header-section-number">5.3</span> Creating Things:</h2>
-<section id="how-to-create-new-files-and-directories.." class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="how-to-create-new-files-and-directories.."><span class="header-section-number">5.3.1</span> How to create new files and directories..</h3>
+<section id="creating-things" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="creating-things"><span class="header-section-number">6.3</span> Creating Things:</h2>
+<section id="how-to-create-new-files-and-directories.." class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="how-to-create-new-files-and-directories.."><span class="header-section-number">6.3.1</span> How to create new files and directories..</h3>
 <table class="table">
 <colgroup>
 <col style="width: 5%">
@@ -286,10 +292,10 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="how-to-delete-files-and-directories" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="how-to-delete-files-and-directories"><span class="header-section-number">5.3.2</span> How to delete files and directories…</h3>
-<section id="remember-that-deleting-is-forever.-there-is-no-going-back" class="level4" data-number="5.3.2.1">
-<h4 data-number="5.3.2.1" class="anchored" data-anchor-id="remember-that-deleting-is-forever.-there-is-no-going-back"><span class="header-section-number">5.3.2.1</span> <em>Remember that deleting is forever. There is NO going back</em></h4>
+<section id="how-to-delete-files-and-directories" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="how-to-delete-files-and-directories"><span class="header-section-number">6.3.2</span> How to delete files and directories…</h3>
+<section id="remember-that-deleting-is-forever.-there-is-no-going-back" class="level4" data-number="6.3.2.1">
+<h4 data-number="6.3.2.1" class="anchored" data-anchor-id="remember-that-deleting-is-forever.-there-is-no-going-back"><span class="header-section-number">6.3.2.1</span> <em>Remember that deleting is forever. There is NO going back</em></h4>
 <table class="table">
 <colgroup>
 <col style="width: 14%">
@@ -314,8 +320,8 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </section>
 </section>
-<section id="how-to-copy-and-rename-files-and-directories" class="level3" data-number="5.3.3">
-<h3 data-number="5.3.3" class="anchored" data-anchor-id="how-to-copy-and-rename-files-and-directories"><span class="header-section-number">5.3.3</span> How to copy and rename files and directories…</h3>
+<section id="how-to-copy-and-rename-files-and-directories" class="level3" data-number="6.3.3">
+<h3 data-number="6.3.3" class="anchored" data-anchor-id="how-to-copy-and-rename-files-and-directories"><span class="header-section-number">6.3.3</span> How to copy and rename files and directories…</h3>
 <table class="table">
 <colgroup>
 <col style="width: 9%">
@@ -340,13 +346,13 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </section>
 </section>
-<section id="pipes-and-filters" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="pipes-and-filters"><span class="header-section-number">5.4</span> Pipes and Filters</h2>
-<section id="how-to-use-wildcards-to-match-filenames" class="level3" data-number="5.4.1">
-<h3 data-number="5.4.1" class="anchored" data-anchor-id="how-to-use-wildcards-to-match-filenames"><span class="header-section-number">5.4.1</span> How to use wildcards to match filenames…</h3>
+<section id="pipes-and-filters" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="pipes-and-filters"><span class="header-section-number">6.4</span> Pipes and Filters</h2>
+<section id="how-to-use-wildcards-to-match-filenames" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="how-to-use-wildcards-to-match-filenames"><span class="header-section-number">6.4.1</span> How to use wildcards to match filenames…</h3>
 <p>Wildcards are a shell feature that makes the command line much more powerful than any GUI file managers. Wildcards are particularly useful when you are looking for directories, files, or file content that can vary along a given dimension. These wildcards can be used with any command that accepts file names or text strings as arguments.</p>
-<section id="table-of-commonly-used-wildcards" class="level4" data-number="5.4.1.1">
-<h4 data-number="5.4.1.1" class="anchored" data-anchor-id="table-of-commonly-used-wildcards"><span class="header-section-number">5.4.1.1</span> Table of commonly used wildcards</h4>
+<section id="table-of-commonly-used-wildcards" class="level4" data-number="6.4.1.1">
+<h4 data-number="6.4.1.1" class="anchored" data-anchor-id="table-of-commonly-used-wildcards"><span class="header-section-number">6.4.1.1</span> Table of commonly used wildcards</h4>
 <table class="table">
 <colgroup>
 <col style="width: 33%">
@@ -392,8 +398,8 @@ ul.task-list li input[type="checkbox"] {
 <p>See the cheatsheet on regular expressions on the second page of this <a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/strings.pdf">PDF cheatsheet</a> for more “wildcard” shortcuts.</p>
 </section>
 </section>
-<section id="how-to-redirect-to-a-file-and-get-input-from-a-file" class="level3" data-number="5.4.2">
-<h3 data-number="5.4.2" class="anchored" data-anchor-id="how-to-redirect-to-a-file-and-get-input-from-a-file"><span class="header-section-number">5.4.2</span> How to redirect to a file and get input from a file …</h3>
+<section id="how-to-redirect-to-a-file-and-get-input-from-a-file" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="how-to-redirect-to-a-file-and-get-input-from-a-file"><span class="header-section-number">6.4.2</span> How to redirect to a file and get input from a file …</h3>
 <p>Redirection operators can be used to redirect the output from a program from the display screen to a file where it is saved (or many other places too, like your printer or to another program where it can be used as input).</p>
 <table class="table">
 <colgroup>
@@ -421,8 +427,8 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<section id="how-to-use-the-output-of-one-command-as-the-input-to-another-with-a-pipe" class="level4" data-number="5.4.2.1">
-<h4 data-number="5.4.2.1" class="anchored" data-anchor-id="how-to-use-the-output-of-one-command-as-the-input-to-another-with-a-pipe"><span class="header-section-number">5.4.2.1</span> How to use the output of one command as the input to another with a pipe…</h4>
+<section id="how-to-use-the-output-of-one-command-as-the-input-to-another-with-a-pipe" class="level4" data-number="6.4.2.1">
+<h4 data-number="6.4.2.1" class="anchored" data-anchor-id="how-to-use-the-output-of-one-command-as-the-input-to-another-with-a-pipe"><span class="header-section-number">6.4.2.1</span> How to use the output of one command as the input to another with a pipe…</h4>
 <p>A special kind of redirection is called a pipe and is denoted by <code>|</code>.</p>
 <table class="table">
 <colgroup>
@@ -442,19 +448,19 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<section id="example" class="level5" data-number="5.4.2.1.1">
-<h5 data-number="5.4.2.1.1" class="anchored" data-anchor-id="example"><span class="header-section-number">5.4.2.1.1</span> Example:</h5>
+<section id="example" class="level5" data-number="6.4.2.1.1">
+<h5 data-number="6.4.2.1.1" class="anchored" data-anchor-id="example"><span class="header-section-number">6.4.2.1.1</span> Example:</h5>
 <pre><code>ls *.md | head | sed -i `s/markdown/software/g`</code></pre>
 <p>changes all the instances of the word <code>markdown</code> to <code>software</code> in the first 5 <code>*.md</code> files in your current directory.</p>
 </section>
 </section>
 </section>
 </section>
-<section id="how-to-repeat-operations-using-a-loop" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="how-to-repeat-operations-using-a-loop"><span class="header-section-number">5.5</span> How to repeat operations using a loop…</h2>
+<section id="how-to-repeat-operations-using-a-loop" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="how-to-repeat-operations-using-a-loop"><span class="header-section-number">6.5</span> How to repeat operations using a loop…</h2>
 <p>Loops assign a value in a list or counter to a variable that takes on a different value each time through the loop. There are 2 primary kinds of loops: <code>for</code> loops and <code>while</code> loops.</p>
-<section id="for-loop" class="level3" data-number="5.5.1">
-<h3 data-number="5.5.1" class="anchored" data-anchor-id="for-loop"><span class="header-section-number">5.5.1</span> For loop</h3>
+<section id="for-loop" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="for-loop"><span class="header-section-number">6.5.1</span> For loop</h3>
 <p>For loops loop through variables in a list</p>
 <pre><code>for varname in list
 do
@@ -484,8 +490,8 @@ do
 done</code></pre>
 <p><em>Note:</em> Bash is zero indexed, so counting always starts at <code>0</code>, not <code>1</code>.</p>
 </section>
-<section id="while-loop" class="level3" data-number="5.5.2">
-<h3 data-number="5.5.2" class="anchored" data-anchor-id="while-loop"><span class="header-section-number">5.5.2</span> While Loop</h3>
+<section id="while-loop" class="level3" data-number="6.5.2">
+<h3 data-number="6.5.2" class="anchored" data-anchor-id="while-loop"><span class="header-section-number">6.5.2</span> While Loop</h3>
 <p>While loops loop through the commands until a condition is met. For example</p>
 <pre><code>COUNTER=0
 while [ ${COUNTER} -lt 10 ]; do
@@ -497,8 +503,8 @@ done</code></pre>
 <ul>
 <li><code>while</code>, <code>do</code>, and <code>done</code> are keywords</li>
 </ul>
-<section id="commonly-used-conditional-operators" class="level4" data-number="5.5.2.1">
-<h4 data-number="5.5.2.1" class="anchored" data-anchor-id="commonly-used-conditional-operators"><span class="header-section-number">5.5.2.1</span> Commonly used conditional operators</h4>
+<section id="commonly-used-conditional-operators" class="level4" data-number="6.5.2.1">
+<h4 data-number="6.5.2.1" class="anchored" data-anchor-id="commonly-used-conditional-operators"><span class="header-section-number">6.5.2.1</span> Commonly used conditional operators</h4>
 <table class="table">
 <thead>
 <tr class="header">
@@ -537,10 +543,10 @@ done</code></pre>
 </section>
 </section>
 </section>
-<section id="finding-things" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="finding-things"><span class="header-section-number">5.6</span> Finding Things</h2>
-<section id="how-to-select-lines-matching-patterns-in-text-files" class="level3" data-number="5.6.1">
-<h3 data-number="5.6.1" class="anchored" data-anchor-id="how-to-select-lines-matching-patterns-in-text-files"><span class="header-section-number">5.6.1</span> How to select lines matching patterns in text files…</h3>
+<section id="finding-things" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="finding-things"><span class="header-section-number">6.6</span> Finding Things</h2>
+<section id="how-to-select-lines-matching-patterns-in-text-files" class="level3" data-number="6.6.1">
+<h3 data-number="6.6.1" class="anchored" data-anchor-id="how-to-select-lines-matching-patterns-in-text-files"><span class="header-section-number">6.6.1</span> How to select lines matching patterns in text files…</h3>
 <p>To find information within files, you use a command called <code>grep</code>.</p>
 <table class="table">
 <colgroup>
@@ -560,8 +566,8 @@ done</code></pre>
 </tr>
 </tbody>
 </table>
-<section id="commonly-used-grep-options" class="level4" data-number="5.6.1.1">
-<h4 data-number="5.6.1.1" class="anchored" data-anchor-id="commonly-used-grep-options"><span class="header-section-number">5.6.1.1</span> Commonly used <code>grep</code> options</h4>
+<section id="commonly-used-grep-options" class="level4" data-number="6.6.1.1">
+<h4 data-number="6.6.1.1" class="anchored" data-anchor-id="commonly-used-grep-options"><span class="header-section-number">6.6.1.1</span> Commonly used <code>grep</code> options</h4>
 <table class="table">
 <colgroup>
 <col style="width: 2%">
@@ -598,8 +604,8 @@ done</code></pre>
 </table>
 </section>
 </section>
-<section id="how-to-find-files-with-certain-properties" class="level3" data-number="5.6.2">
-<h3 data-number="5.6.2" class="anchored" data-anchor-id="how-to-find-files-with-certain-properties"><span class="header-section-number">5.6.2</span> How to find files with certain properties…</h3>
+<section id="how-to-find-files-with-certain-properties" class="level3" data-number="6.6.2">
+<h3 data-number="6.6.2" class="anchored" data-anchor-id="how-to-find-files-with-certain-properties"><span class="header-section-number">6.6.2</span> How to find files with certain properties…</h3>
 <p>To find file and directory names, you use a command called <code>find</code></p>
 <table class="table">
 <colgroup>
@@ -619,8 +625,8 @@ done</code></pre>
 </tr>
 </tbody>
 </table>
-<section id="commonly-used-find-options" class="level4" data-number="5.6.2.1">
-<h4 data-number="5.6.2.1" class="anchored" data-anchor-id="commonly-used-find-options"><span class="header-section-number">5.6.2.1</span> Commonly used <code>find</code> options</h4>
+<section id="commonly-used-find-options" class="level4" data-number="6.6.2.1">
+<h4 data-number="6.6.2.1" class="anchored" data-anchor-id="commonly-used-find-options"><span class="header-section-number">6.6.2.1</span> Commonly used <code>find</code> options</h4>
 <table class="table">
 <colgroup>
 <col style="width: 8%">
@@ -906,12 +912,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./Git_commands.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git Commands</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Git Commands</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./summary.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
