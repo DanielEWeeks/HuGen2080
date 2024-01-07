@@ -23,7 +23,7 @@ Genotyping algorithms for genome wide association studies/ Dr. Vincent Plagnol
 ### Required Readings 
 
 Ziegler and König - Chapter 3: Genetic Markers      
-Ziegler and König - Chapter 5: Genetic Map Distances 
+Ziegler and König - Chapter 5: Genetic Map Distances       
 Laird and Lange - Section 2.3: The biology underlying Mendelian inheritance (See errata)     
 Laird and Lange - Section 5.2 Genetic maps and marker maps      
 
