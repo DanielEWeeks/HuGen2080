@@ -51,6 +51,11 @@ Introductory genetics for statisticians/ Robert C. Elston.
 *  To understand the vital importance of phenotype definition 
 *  To understand the best sample selection strategies 
 
+### Required reading:
+
+Balding DJ. A tutorial on statistical methods for population association studies. Nature Reviews Genetics. Nature Publishing Group; 2006 Oct 1;7(10):781–791. DOI: https://doi.org/10.1038/nrg1916
+
+
 ### Active Learning: 
 
 Intro to Unix & PLINK 
