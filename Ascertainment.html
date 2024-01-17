@@ -1089,7 +1089,18 @@ Answer 1
 <div class="callout-body-container callout-body">
 <p>The prevalence without any ascertainment correction is 864/(3*813) = 0.3542.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">864</span><span class="sc">/</span>(<span class="dv">3</span><span class="sc">*</span><span class="dv">813</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Total number of affecteds</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dv">763</span> <span class="sc">+</span> <span class="dv">2</span><span class="sc">*</span><span class="dv">49</span> <span class="sc">+</span> <span class="dv">3</span><span class="sc">*</span><span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 864</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Total number of children</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span><span class="sc">*</span><span class="dv">813</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2439</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># (Number of affecteds)/(Number of children)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="dv">864</span><span class="sc">/</span>(<span class="dv">3</span><span class="sc">*</span><span class="dv">813</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.3542435</code></pre>
 </div>
@@ -1130,7 +1141,7 @@ Answer 2
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Here we use the formula</p>
+<p>Here we use the Li and Mantel (1968) formula</p>
 <p>p = (R - J)/(T - J)</p>
 <p>where</p>
 <ul>
@@ -1146,10 +1157,10 @@ Answer 2
 </ul>
 <p>So p = (R - J)/(T - J) = (864 - 763)/(2439 - 763) = 0.0603</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>R <span class="ot">=</span> <span class="dv">864</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>T <span class="ot">=</span> <span class="dv">3</span> <span class="sc">*</span> <span class="dv">813</span> </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>J <span class="ot">=</span> <span class="dv">763</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>(R <span class="sc">-</span> J)<span class="sc">/</span>(T <span class="sc">-</span> J)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>R <span class="ot">=</span> <span class="dv">864</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>T <span class="ot">=</span> <span class="dv">3</span> <span class="sc">*</span> <span class="dv">813</span> </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>J <span class="ot">=</span> <span class="dv">763</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>(R <span class="sc">-</span> J)<span class="sc">/</span>(T <span class="sc">-</span> J)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.06026253</code></pre>
 </div>
@@ -1161,7 +1172,8 @@ Answer 2
 <section id="references" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="references"><span class="header-section-number">7.2</span> References</h2>
 <ol type="1">
-<li>Burton PR, Palmer LJ, Jacobs K, Keen KJ, Olson JM, Elston RC. Ascertainment adjustment: where does it take us? Am J Hum Genet. 2000 Dec;67(6):1505–1514. PMID: 11078478 PMCID: PMC1287927 DOI: https://doi.org/10.1086/316899</li>
+<li><p>Burton PR, Palmer LJ, Jacobs K, Keen KJ, Olson JM, Elston RC. Ascertainment adjustment: where does it take us? Am J Hum Genet. 2000 Dec;67(6):1505–1514. PMID: 11078478 PMCID: PMC1287927 DOI: https://doi.org/10.1086/316899</p></li>
+<li><p>Li CC, Mantel N. A simple method of estimating the segregation ratio under complete ascertainment. Am J Hum Genet. 1968 Jan;20(1):61–81. PMID: 5635671 PMCID: PMC1706251</p></li>
 </ol>
 
 
