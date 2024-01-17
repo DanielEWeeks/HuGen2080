@@ -1,0 +1,21 @@
+---
+title: WebR - R in the web browser
+webr:
+  packages: ['ggplot2']
+editor: 
+  mode: source    
+---
+
+This is a WebR-enabled code cell in a Quarto HTML document. As the WebR documentation states: "WebR makes it possible to run R code in the browser without the need for an R server to execute the code: the R interpreter runs directly on the user's machine."
+
+```{webr-r}
+# Edit/add code here
+fit = lm(mpg ~ am, data = mtcars)
+summary(fit)
+library(ggplot2)
+ggplot(mtcars, aes(x=am,y=mpg)) + 
+   geom_point() + 
+   geom_smooth(method="lm")
+```
+
+## Link: [WebR](https://docs.r-wasm.org/webr/latest/) and [`quarto-webr`](http://quarto-webr.thecoatlessprofessor.com/).

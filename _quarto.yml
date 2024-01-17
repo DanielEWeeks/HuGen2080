@@ -15,6 +15,9 @@ book:
     - Basic_Unix_commands.Qmd
     - summary.qmd
     - references.qmd
+  appendices:
+    - TechnicalDetails.qmd
+    - webR_test.qmd
 
 bibliography: references.bib
 
