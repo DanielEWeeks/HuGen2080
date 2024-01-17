@@ -31,6 +31,11 @@ N Aff Children | N Sibships
 The prevalence without any ascertainment correction is 864/(3\*813) = 0.3542.
 
 ```{r}
+# Total number of affecteds
+763 + 2*49 + 3*1
+# Total number of children
+3*813
+# (Number of affecteds)/(Number of children)
 864/(3*813)
 ```
 :::
@@ -45,7 +50,7 @@ The prevalence without any ascertainment correction is 864/(3\*813) = 0.3542.
 ::: {.callout-tip collapse="true"}
 ## Answer 2
 
-Here we use the formula
+Here we use the Li and Mantel (1968) formula
 
 p = (R - J)/(T - J)
 
@@ -74,3 +79,6 @@ J = 763
 ## References
 
 1.  Burton PR, Palmer LJ, Jacobs K, Keen KJ, Olson JM, Elston RC. Ascertainment adjustment: where does it take us? Am J Hum Genet. 2000 Dec;67(6):1505–1514. PMID: 11078478 PMCID: PMC1287927 DOI: https://doi.org/10.1086/316899
+
+2.  Li CC, Mantel N. A simple method of estimating the segregation ratio under complete ascertainment. Am J Hum Genet. 1968 Jan;20(1):61–81. PMID: 5635671 PMCID: PMC1706251
+
