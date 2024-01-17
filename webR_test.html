@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HuGen2080 book – 4&nbsp; GitHub</title>
+<title>HuGen2080 book - Appendix B — WebR - R in the web browser</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Git_commands.html" rel="next">
-<link href="./Readings.html" rel="prev">
+<link href="./TechnicalDetails.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./gitIntro.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">GitHub</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./TechnicalDetails.html">Appendices</a></li><li class="breadcrumb-item"><a href="./webR_test.html"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">WebR - R in the web browser</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -89,9 +88,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">
-      HuGen2080 book
-      </a> 
+      <a href="./">HuGen2080 book</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -127,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./gitIntro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./gitIntro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">GitHub</span></span></a>
   </div>
 </li>
@@ -172,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./webR_test.html" class="sidebar-item-text sidebar-link">
+  <a href="./webR_test.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">WebR - R in the web browser</span></span></a>
   </div>
 </li>
@@ -188,8 +185,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#github-introduction-lecture" id="toc-github-introduction-lecture" class="nav-link active" data-scroll-target="#github-introduction-lecture"><span class="header-section-number">4.1</span> GitHub Introduction lecture</a></li>
-  <li><a href="#github-introduction-slides" id="toc-github-introduction-slides" class="nav-link" data-scroll-target="#github-introduction-slides"><span class="header-section-number">4.2</span> GitHub Introduction slides</a></li>
+  <li><a href="#link-webr-and-quarto-webr." id="toc-link-webr-and-quarto-webr." class="nav-link active" data-scroll-target="#link-webr-and-quarto-webr."><span class="header-section-number">B.1</span> Link: WebR and <code>quarto-webr</code>.</a></li>
   </ul>
 </nav>
     </div>
@@ -198,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">GitHub</span></h1>
+<h1 class="title">Appendix B — WebR - R in the web browser</h1>
 </div>
 
 
@@ -213,27 +209,22 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="github-introduction-lecture" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="github-introduction-lecture"><span class="header-section-number">4.1</span> GitHub Introduction lecture</h2>
-<p>Here’s a recording of this lecture (32 minutes 8 seconds):</p>
-<p><a href="https://pitt.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e274c96f-1906-4955-9a8d-b06600f51f49" class="external" target="_blank">Recording</a></p>
-<iframe credentialless="" src="https://pitt.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=e274c96f-1906-4955-9a8d-b06600f51f49&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=true&amp;captions=true&amp;interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen="" allow="autoplay">
-</iframe>
-</section>
-<section id="github-introduction-slides" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="github-introduction-slides"><span class="header-section-number">4.2</span> GitHub Introduction slides</h2>
-<p><a href="pdfs/GitHubIntro.pdf" target="_blank">PDF slide set</a></p>
-<p><iframe width="100%" height="800" src="pdfs/GitHubIntro.pdf"></p>
-<div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden" data-render-id="quarto-int-sidebar-title">HuGen2080 book</span> <span class="hidden" data-render-id="quarto-int-navbar-title">HuGen2080 book</span> <span class="hidden" data-render-id="quarto-int-next"><span class="chapter-number">5</span>  <span class="chapter-title">Git Commands</span></span> <span class="hidden" data-render-id="quarto-int-prev"><span class="chapter-number">3</span>  <span class="chapter-title">Readings</span></span> <span class="hidden" data-render-id="quarto-int-sidebar:/index.html">Preface</span> <span class="hidden" data-render-id="quarto-int-sidebar:/intro.html"><span class="chapter-number">1</span>  <span class="chapter-title">Introduction</span></span> <span class="hidden" data-render-id="quarto-int-sidebar:/logistics.html"><span class="chapter-number">2</span>  <span class="chapter-title">Logistics</span></span> <span class="hidden" data-render-id="quarto-int-sidebar:/Readings.html"><span class="chapter-number">3</span>  <span class="chapter-title">Readings</span></span> <span class="hidden" data-render-id="quarto-int-sidebar:/gitIntro.html"><span class="chapter-number">4</span>  <span class="chapter-title">GitHub</span></span> <span class="hidden" data-render-id="quarto-int-sidebar:/Git_commands.html"><span class="chapter-number">5</span>  <span class="chapter-title">Git Commands</span></span> <span class="hidden" data-render-id="quarto-int-sidebar:/Basic_Unix_commands.html"><span class="chapter-number">6</span>  <span class="chapter-title">Basic Shell Commands</span></span> <span class="hidden" data-render-id="quarto-int-sidebar:/summary.html"><span class="chapter-number">7</span>  <span class="chapter-title">Summary</span></span> <span class="hidden" data-render-id="quarto-int-sidebar:/references.html">References</span> <span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-1">Appendices</span> <span class="hidden" data-render-id="quarto-int-sidebar:/TechnicalDetails.html"><span class="chapter-number">A</span>  <span class="chapter-title">Technical Details</span></span> <span class="hidden" data-render-id="quarto-int-sidebar:/webR_test.html"><span class="chapter-number">B</span>  <span class="chapter-title">WebR - R in the web browser</span></span> <span class="hidden" data-render-id="quarto-breadcrumbs-dcf3bcff749a5953d4f828dda9900b29"><span class="chapter-number">4</span>  <span class="chapter-title">GitHub</span></span></p>
-</div>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden" data-render-id="quarto-metatitle">HuGen2080 book - <span class="chapter-number">4</span>  <span class="chapter-title">GitHub</span></span> <span class="hidden" data-render-id="quarto-twittercardtitle">HuGen2080 book - <span class="chapter-number">4</span>  <span class="chapter-title">GitHub</span></span> <span class="hidden" data-render-id="quarto-ogcardtitle">HuGen2080 book - <span class="chapter-number">4</span>  <span class="chapter-title">GitHub</span></span> <span class="hidden" data-render-id="quarto-metasitename">HuGen2080 book</span> <span class="hidden" data-render-id="quarto-twittercarddesc"></span> <span class="hidden" data-render-id="quarto-ogcardddesc"></span></p>
-</div>
+<p>This is a WebR-enabled code cell in a Quarto HTML document. As the WebR documentation states: “WebR makes it possible to run R code in the browser without the need for an R server to execute the code: the R interpreter runs directly on the user’s machine.”</p>
+<pre class="{webr-r}"><code># Edit/add code here
+fit = lm(mpg ~ am, data = mtcars)
+summary(fit)
+library(ggplot2)
+ggplot(mtcars, aes(x=am,y=mpg)) + 
+   geom_point() + 
+   geom_smooth(method="lm")</code></pre>
+<section id="link-webr-and-quarto-webr." class="level2" data-number="B.1">
+<h2 data-number="B.1" class="anchored" data-anchor-id="link-webr-and-quarto-webr."><span class="header-section-number">B.1</span> Link: <a href="https://docs.r-wasm.org/webr/latest/">WebR</a> and <a href="http://quarto-webr.thecoatlessprofessor.com/"><code>quarto-webr</code></a>.</h2>
+
+
 </section>
 
 </main> <!-- /main -->
-<script id = "quarto-html-after-body" type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -484,18 +475,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a  href="/Readings.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class='chapter-number'>3</span>  <span class='chapter-title'>Readings</span></span>
+      <a href="./TechnicalDetails.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Technical Details</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a  href="/Git_commands.html" class="pagination-link">
-        <span class="nav-page-text"><span class='chapter-number'>5</span>  <span class='chapter-title'>Git Commands</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
 
-</body>
 
-</html></iframe></p></section></main></div></body></html>
+
+</body></html>
