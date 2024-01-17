@@ -375,7 +375,7 @@
     "href": "TechnicalDetails.html#webr-r-in-the-browser",
     "title": "Appendix A — Technical Details",
     "section": "A.6 WebR: R in the browser",
-    "text": "A.6 WebR: R in the browser\nThis Quarto book uses this WebR Quarto extension\nhttps://github.com/coatless/quarto-webr\nWebR makes installs a version of R that runs within the browser, and the Quarto extension makes it interactively available in webr-r chunks.\n# Edit/add/try out R code here\nTo get this to work, the _quarto.yml had to be modified.\nWe added a ‘resources’ directive to copy over the java script files, which places them next to the ‘index.html’ file during deployment of the book:\nproject:\n  type: book\n  resources: \n    - \"webr-serviceworker.js\"\n    - \"webr-worker.js\" \nWe also enabled the webr filter:\nfilters:\n    - webr"
+    "text": "A.6 WebR: R in the browser\nThis Quarto book uses this WebR Quarto extension\nhttps://github.com/coatless/quarto-webr\nWebR makes installs a version of R that runs within the browser, and the Quarto extension makes it interactively available in webr-r chunks.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nTo get this to work, the _quarto.yml had to be modified.\nWe added a ‘resources’ directive to copy over the java script files, which places them next to the ‘index.html’ file during deployment of the book:\nproject:\n  type: book\n  resources: \n    - \"webr-serviceworker.js\"\n    - \"webr-worker.js\" \nWe also enabled the webr filter:\nfilters:\n    - webr"
   },
   {
     "objectID": "TechnicalDetails.html#embedpdf-quarto-extension",
