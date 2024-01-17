@@ -82,3 +82,6 @@ J = 763
 
 2.  Li CC, Mantel N. A simple method of estimating the segregation ratio under complete ascertainment. Am J Hum Genet. 1968 Jan;20(1):61–81. PMID: 5635671 PMCID: PMC1706251
 
+3.  Davie AM. The “singles” method for segregation analysis under incomplete ascertainment. Ann Hum Genet. 1979 May;42(4):507–512. PMID: 475337 DOI: https://doi.org/10.1111/j.1469-1809.1979.tb00683.x
+
+
