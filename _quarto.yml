@@ -16,6 +16,7 @@ book:
   - gitIntro.qmd
   - Git_commands.Qmd
   - Basic_Unix_commands.Qmd
+  - Ascertainment.qmd
   - summary.qmd
   - references.qmd
   appendices:

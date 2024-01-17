@@ -1,0 +1,76 @@
+# Ascertainment
+
+## Example
+
+Burton et al (2000) provide the following example:
+
+They simulated a population containing 4,800 sibships of size 3, with a total of 14,400 children, and 864 affected children. In this population, the prevalence of the disease is 864/14400, which equals 0.06:
+
+```{r}
+864/14400
+```
+
+In their simulation, they then sampled every family that contained one or more affected child, and ended up with this set of 813 families:
+
+N Aff Children | N Sibships 
+------------- | ------------- 
+1 | 763 
+2 | 49 
+3 | 1
+
+**Question 1**: What is the prevalence in this sample of 813 families if we compute it without employing any ascertainment correction?
+
+```{webr-r}
+# Edit/add R code here
+         
+```
+
+::: {.callout-tip collapse="true"}
+## Answer 1
+
+The prevalence without any ascertainment correction is 864/(3\*813) = 0.3542.
+
+```{r}
+864/(3*813)
+```
+:::
+
+**Question 2**: What is the prevalence estimate after correcting for ascertainment?
+
+```{webr-r}
+# Edit/add R code here
+        
+```
+
+::: {.callout-tip collapse="true"}
+## Answer 2
+
+Here we use the formula
+
+p = (R - J)/(T - J)
+
+where
+
+-   R = the total number of affected siblings
+-   T = the total number of siblings
+-   J = the number of siblings with only one proband
+
+In this case,
+
+-   R = 864
+-   T = 3 \* 813 = 2439
+-   J = 763
+
+So p = (R - J)/(T - J) = (864 - 763)/(2439 - 763) = 0.0603
+
+```{r}
+R = 864
+T = 3 * 813 
+J = 763
+(R - J)/(T - J)
+```
+:::
+
+## References
+
+1.  Burton PR, Palmer LJ, Jacobs K, Keen KJ, Olson JM, Elston RC. Ascertainment adjustment: where does it take us? Am J Hum Genet. 2000 Dec;67(6):1505–1514. PMID: 11078478 PMCID: PMC1287927 DOI: https://doi.org/10.1086/316899
