@@ -58,6 +58,12 @@ Type `quarto publish netlify` in the Terminal window.
 
 To create multiple choice questions, use functions from the `webexercises` R package.
 
+```{r, echo=FALSE}
+library(webexercises)
+```
+
+At installation, first do `add_to_quarto()` to add the needed files and setup to include webexercises in a quarto project.
+
 The multiple choice question below is created by the inline R code
 
 ```

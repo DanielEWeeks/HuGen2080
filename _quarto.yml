@@ -1,34 +1,36 @@
 project:
   type: book
-
+  resources:
+  - webr-serviceworker.js
+  - webr-worker.js
+  - coi-serviceworker.js
 book:
-  title: "HuGen2080 book"
-  author: "Daniel E. Weeks"
+  title: HuGen2080 book
+  author: Daniel E. Weeks
   date: today
   chapters:
-    - index.qmd
-    - intro.qmd
-    - logistics.qmd
-    - Readings.qmd
-    - gitIntro.qmd
-    - Git_commands.Qmd
-    - Basic_Unix_commands.Qmd
-    - summary.qmd
-    - references.qmd
+  - index.qmd
+  - intro.qmd
+  - logistics.qmd
+  - Readings.qmd
+  - gitIntro.qmd
+  - Git_commands.Qmd
+  - Basic_Unix_commands.Qmd
+  - summary.qmd
+  - references.qmd
   appendices:
-    - TechnicalDetails.qmd
-    - webR_test.qmd
-
+  - TechnicalDetails.qmd
+  - webR_test.qmd
 bibliography: references.bib
-
 format:
   html:
     theme: cosmo
     link-external-icon: true
     link-external-newwindow: true
-    link-external-filter: '^(?:http:|https:)\/\/danieleweeks\.github\.io\/HuGen2080'
+    link-external-filter: ^(?:http:|https:)\/\/danieleweeks\.github\.io\/HuGen2080
+    css: include/webex.css
+    include-after-body: include/webex.js
   pdf:
     documentclass: scrreprt
-
-
-
+filters: 
+   - webr
