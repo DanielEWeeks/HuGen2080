@@ -333,28 +333,14 @@
     "href": "Ascertainment.html#example",
     "title": "7  Ascertainment",
     "section": "7.1 Example",
-    "text": "7.1 Example\nBurton et al (2000) provide the following example:\nThey simulated a population containing 4,800 sibships of size 3, with a total of 14,400 children, and 864 affected children. In this population, the prevalence of the disease is 864/14400, which equals 0.06:\n\n864/14400\n\n[1] 0.06\n\n\nIn their simulation, they then sampled every family that contained one or more affected child, and ended up with this set of 813 families:\n\n\n\nN Aff Children\nN Sibships\n\n\n\n\n1\n763\n\n\n2\n49\n\n\n3\n1\n\n\n\nQuestion 1: What is the prevalence in this sample of 813 families if we compute it without employing any ascertainment correction?\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
-  },
-  {
-    "objectID": "Ascertainment.html#answer-1",
-    "href": "Ascertainment.html#answer-1",
-    "title": "7  Ascertainment",
-    "section": "7.2 Answer 1",
-    "text": "7.2 Answer 1\nThe prevalence without any ascertainment correction is 864/(3*813) = 0.3542.\n\n864/(3*813)\n\n[1] 0.3542435"
-  },
-  {
-    "objectID": "Ascertainment.html#answer-2",
-    "href": "Ascertainment.html#answer-2",
-    "title": "7  Ascertainment",
-    "section": "7.3 Answer 2",
-    "text": "7.3 Answer 2\nHere we use the formula\np = (R - J)/(T - J)\nwhere\n\nR = the total number of affected siblings\nT = the total number of siblings\nJ = the number of siblings with only one proband\n\nIn this case,\n\nR = 864\nT = 3 * 813 = 2439\nJ = 763\n\nSo p = (R - J)/(T - J) = (864 - 763)/(2439 - 763) = 0.0603\n\nR = 864\nT = 3 * 813 \nJ = 763\n(R - J)/(T - J)\n\n[1] 0.06026253"
+    "text": "7.1 Example\nBurton et al (2000) provide the following example:\nThey simulated a population containing 4,800 sibships of size 3, with a total of 14,400 children, and 864 affected children. In this population, the prevalence of the disease is 864/14400, which equals 0.06:\n\n864/14400\n\n[1] 0.06\n\n\nIn their simulation, they then sampled every family that contained one or more affected child, and ended up with this set of 813 families:\n\n\n\nN Aff Children\nN Sibships\n\n\n\n\n1\n763\n\n\n2\n49\n\n\n3\n1\n\n\n\nQuestion 1: What is the prevalence in this sample of 813 families if we compute it without employing any ascertainment correction?\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nAnswer 1\n\n\n\n\n\nThe prevalence without any ascertainment correction is 864/(3*813) = 0.3542.\n\n864/(3*813)\n\n[1] 0.3542435\n\n\n\n\n\nQuestion 2: What is the prevalence estimate after correcting for ascertainment?\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nAnswer 2\n\n\n\n\n\nHere we use the formula\np = (R - J)/(T - J)\nwhere\n\nR = the total number of affected siblings\nT = the total number of siblings\nJ = the number of siblings with only one proband\n\nIn this case,\n\nR = 864\nT = 3 * 813 = 2439\nJ = 763\n\nSo p = (R - J)/(T - J) = (864 - 763)/(2439 - 763) = 0.0603\n\nR = 864\nT = 3 * 813 \nJ = 763\n(R - J)/(T - J)\n\n[1] 0.06026253"
   },
   {
     "objectID": "Ascertainment.html#references",
     "href": "Ascertainment.html#references",
     "title": "7  Ascertainment",
-    "section": "7.4 References",
-    "text": "7.4 References\n\nBurton PR, Palmer LJ, Jacobs K, Keen KJ, Olson JM, Elston RC. Ascertainment adjustment: where does it take us? Am J Hum Genet. 2000 Dec;67(6):1505–1514. PMID: 11078478 PMCID: PMC1287927 DOI: https://doi.org/10.1086/316899"
+    "section": "7.2 References",
+    "text": "7.2 References\n\nBurton PR, Palmer LJ, Jacobs K, Keen KJ, Olson JM, Elston RC. Ascertainment adjustment: where does it take us? Am J Hum Genet. 2000 Dec;67(6):1505–1514. PMID: 11078478 PMCID: PMC1287927 DOI: https://doi.org/10.1086/316899"
   },
   {
     "objectID": "summary.html",
