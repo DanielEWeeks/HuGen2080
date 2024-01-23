@@ -13,6 +13,7 @@ book:
   - intro.qmd
   - logistics.qmd
   - Readings.qmd
+  - statsBasics.qmd
   - gitIntro.qmd
   - Git_commands.Qmd
   - Basic_Unix_commands.Qmd
