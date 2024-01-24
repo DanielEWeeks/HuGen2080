@@ -2,7 +2,13 @@
 
 ## Sums
 
-$\sum_{i=1}^{3}{X_i} = X_1 + X_2 + X_3$
+\begin{equation}
+\begin{split}
+\sum_{i=1}^{3}{X_i} &= X_1 + X_2 + X_3\\
+\end{split}
+\end{equation}
+
+
 
 Example:
 
@@ -24,14 +30,21 @@ would be more clearly written as
 
 ## Products
 
-$\prod_{i=1}^{3}{X_i} = X_1 \times X_2 \times X_3$
-
+\begin{equation}
+\begin{split}
+\prod_{i=1}^{3}{X_i} &= X_1 \times X_2 \times X_3\\
+\end{split}
+\end{equation}
 
 ## Conditional Probability
 
 1. Definition:
 
-$P(A|B) = \frac{P(A \cap B)}{P(B)}$
+\begin{equation}
+\begin{split}
+P(A|B) &= \frac{P(A \cap B)}{P(B)}\\
+\end{split}
+\end{equation}
 
 2. Let $S = \bigcup\limits_{i=1}^nA_i$ and $A_i \cap A_j = \emptyset$ for $i \ne j$.  Then $P(B) = \sum\limits_{i=1}^nP(B|A_i)P(A_i)$
 
@@ -43,7 +56,11 @@ Let $S = \bigcup\limits_{i=1}^nA_i$ and $A_i \cap A_j = \emptyset$ for $i \ne j$
 
 5. Intermediate Conditioning
 
-$P(A|B) = \sum\limits_{i}P(A|X_i,B)P(X_i|B)$
+\begin{equation}
+\begin{split}
+P(A|B) = \sum\limits_{i}P(A|X_i,B)P(X_i|B)\\
+\end{split}
+\end{equation}
 
 6. $P(A|B, C) = \frac{P(B|A,C)P(A|C)}{P(B|C)}$
 
@@ -51,4 +68,8 @@ $P(A|B) = \sum\limits_{i}P(A|X_i,B)P(X_i|B)$
 
 8. If $A_i$ are mutually exclusive and exhaustive, then
 
-$P(A_j|B, C) = \frac{P(B|A_j,C)P(A_j|C)}{\sum\limits_iP(B|A_i,C)P(A_i|C)}$
+\begin{equation}
+\begin{split}
+P(A_j|B, C) = \frac{P(B|A_j,C)P(A_j|C)}{\sum\limits_iP(B|A_i,C)P(A_i|C)}\\
+\end{split}
+\end{equation}
