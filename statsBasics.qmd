@@ -36,6 +36,21 @@ would be more clearly written as
 \end{split}
 \end{equation}
 
+## Likelihood
+
+*Based in part on my class notes from the 1988 UCLA Biomathematics 207 A course "Theoretical Genetic Modeling" taught by Dr. Susan Hodge.* 
+
+The likelihood $L(Hypothesis\ H | Data\ D)$, given a specific model, is proportional to $P(D|H)$ with the constant of proportionality being arbitrary.
+
+As such, the likelihood is a function of the hypothesis, not of the data. 
+
+As Etz (2018) states: 
+
+"The likelihood of a hypothesis (H) given some data (D) is the probability of obtaining D given that H is true multiplied by an arbitrary positive constant K: $L(H) = K × P(D|H)$. ... For likelihood, the data are treated as a given, and the hypothesis varies." (Etz, 2018, p. 60)
+
+Etz A. Introduction to the Concept of Likelihood and Its Applications. Advances in Methods and Practices in Psychological Science. SAGE Publications Inc; 2018 Mar 1;1(1):60–69. DOI: <https://doi.org/10.1177/2515245917744314>
+
+
 ## Conditional Probability
 
 1. Definition:
