@@ -267,7 +267,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="maximum-likelihood-estimation" class="level1" data-number="10">
 <h1 data-number="10"><span class="header-section-number">10</span> Maximum likelihood estimation</h1>
-<p>Suppose we have a phase-known family with 7 non-recombinant children and 1 recombinant child. The LOD score function for this family is then:</p>
+<p>The MLE of <span class="math inline">\(\theta\)</span> is the value of <span class="math inline">\(\theta\)</span> in the interval [0, 0.5] that gives the maximum LOD score in that interval.</p>
+<p>So you could do this by numerically evaluating the LOD score function on a fine grid of <span class="math inline">\(\theta\)</span> values.</p>
+<p>Drawing a graph of the LOD score function as <span class="math inline">\(\theta\)</span> varies might be helpful too.</p>
+<p>Or you could do this by taking the derivative of the LOD score function with respect to <span class="math inline">\(\theta\)</span> and solving for the value of <span class="math inline">\(\theta\)</span> that sets the derivative to zero.</p>
+<p><strong>Example:</strong> Suppose we have a phase-known family with 7 non-recombinant children and 1 recombinant child. The LOD score function for this family is then:</p>
 <p><span class="math display">\[\begin{equation}
 \begin{split}
 LOD(\theta) = log_{10}\frac{\theta(1-\theta)^7}{0.5^8}\\
