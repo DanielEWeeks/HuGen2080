@@ -1,0 +1,65 @@
+# Model-based Linkage Analysis
+
+# Maximum likelihood estimation
+
+The MLE of $\theta$ is the value of $\theta$ in the interval [0, 0.5] that gives the maximum LOD score in that interval.
+
+So you could do this by numerically evaluating the LOD score function on a fine grid of $\theta$ values.
+
+Drawing a graph of the LOD score function as $\theta$ varies might be helpful too.
+
+Or you could do this by taking the derivative of the LOD score function with respect to $\theta$ and solving for the value of $\theta$ that sets the derivative to zero.
+
+**Example:** Suppose we have a phase-known family with 7 non-recombinant children and 1 recombinant child.  The LOD score function for this family is then:
+
+\begin{equation}
+\begin{split}
+LOD(\theta) = log_{10}\frac{\theta(1-\theta)^7}{0.5^8}\\
+\end{split}
+\end{equation}
+
+We could then build up a LOD score table:
+
+```{r}
+library(pander)
+library(ggplot2)
+LOD <- function(theta) {log10((1/0.5^8)*theta*(1-theta)^7)}
+thetas <- seq(0,0.5,0.05)
+df <- data.frame(Theta=thetas,LODscore=NA)
+for (i in 1:length(thetas) ) {
+  df$LODscore[i] <- LOD(thetas[i])
+}
+pander(df)
+ggplot(data=df,aes(x=Theta,y=LODscore)) + geom_line()
+```
+
+These results indicate that the LOD score takes its maximum at a value of theta ($\theta$) that lies somewhere between 0.10 and 0.15.
+
+We can find the maximum likelihood estimator of $\theta$ by using a much finer grid of theta values, or by using a numerical search, or by taking the derivative of the LOD score function with respect to $\theta$, setting it to zero, and solving for $\theta$.
+
+R's Non-Linear Minimization `nlm` function can be used to do a numerical search, but it searches for a minimum of the function, not a maximum, so to use it, we need to define a different function that computes the negative of the LOD score:
+
+```{r}
+negLOD <- function(theta) {
+  -1*LOD(theta)
+}
+results <- nlm(negLOD,p=0.05)
+unlist(results)
+```
+
+So our maximum likelihood estimate $\hat{\theta}$ is `r results[[2]]`.
+
+If we use the derivative approach, we'll find that the exact MLE $\hat{\theta}$ is the number of recombinants over the total number of children:
+
+\begin{equation}
+\begin{split}
+\hat{\theta} = 1/8 = 0.1250\\
+\end{split}
+\end{equation}
+
+At this value of $\theta$, the LOD score takes on its maximum value which is:
+
+```{r}
+LOD(1/8)
+```
+

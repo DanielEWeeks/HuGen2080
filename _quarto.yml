@@ -18,6 +18,7 @@ book:
   - Git_commands.Qmd
   - Basic_Unix_commands.Qmd
   - Ascertainment.qmd
+  - LODscores.qmd
   - summary.qmd
   - references.qmd
   appendices:
