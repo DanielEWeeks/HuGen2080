@@ -318,7 +318,8 @@ window.Quarto = {
 P(A|B) &amp;= \frac{P(A \cap B)}{P(B)}\\
 \end{split}
 \end{equation}\]</span></p>
-<p>where <span class="math inline">\(A \cap B\)</span> stands for “A intersect B” or “A AND B”. This conditional probability formula can be illustrated like this:</p>
+<p>where <span class="math inline">\(A \cap B\)</span> stands for “A intersect B” or “A AND B”. For example, if <span class="math inline">\(A_1 = (1,2)\)</span> and <span class="math inline">\(A_2 = (2,3)\)</span>, then <span class="math inline">\(A_1 \cap A_2 = (2)\)</span></p>
+<p>This conditional probability formula can be illustrated like this:</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -331,7 +332,7 @@ P(A|B) &amp;= \frac{P(A \cap B)}{P(B)}\\
 <ol start="2" type="1">
 <li>Let <span class="math inline">\(S = \bigcup\limits_{i=1}^nA_i\)</span> and <span class="math inline">\(A_i \cap A_j = \emptyset\)</span> for <span class="math inline">\(i \ne j\)</span>. Then <span class="math inline">\(P(B) = \sum\limits_{i=1}^nP(B|A_i)P(A_i)\)</span></li>
 </ol>
-<p>where <span class="math inline">\(\emptyset\)</span> stands for the empty set and <span class="math inline">\(\bigcup\)</span> is the union operator. For example, <span class="math inline">\(A_1 \bigcup A_2\)</span> is the union of the elements in the sets <span class="math inline">\(A_1\)</span> and <span class="math inline">\(A_2\)</span>. This is the set of elements that are shared in common between <span class="math inline">\(A_1\)</span> and <span class="math inline">\(A_2\)</span>.</p>
+<p>where <span class="math inline">\(\emptyset\)</span> stands for the empty set and <span class="math inline">\(\bigcup\)</span> is the union operator. For example, <span class="math inline">\(A_1 \bigcup A_2\)</span> is the union of the sets <span class="math inline">\(A_1\)</span> and <span class="math inline">\(A_2\)</span>. This is the set of elements that are in <span class="math inline">\(A_1\)</span> plus the set of elements that are in <span class="math inline">\(A_2\)</span>, without duplication. For example, if <span class="math inline">\(A_1 = (1,2)\)</span> and <span class="math inline">\(A_2 = (2,3)\)</span>, then <span class="math inline">\(A_1 \bigcup A_2 = (1,2,3)\)</span></p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
