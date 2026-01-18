@@ -33,7 +33,5 @@ format:
     link-external-filter: ^(?:http:|https:)\/\/danieleweeks\.github\.io\/HuGen2080
     css: include/webex.css
     include-after-body: include/webex.js
-  pdf:
-    documentclass: scrreprt
 filters: 
    - webr
