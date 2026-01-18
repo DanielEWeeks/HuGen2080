@@ -163,7 +163,7 @@ grid.text("B", x = 0.82, y = 0.5,
 
 # Draw intersection labels
 y_start <- 0.05
-for (i in 1:n) {
+for (i in 1:(n-1)) {
   y_pos <- y_start + sum(partition_heights[1:i]) - partition_heights[i]/2
   
   # Add B ∩ A_i label (adjust y position for first partition)
