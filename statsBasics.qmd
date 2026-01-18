@@ -113,7 +113,7 @@ grid.text("The probability of A given that B has occurred",
 
 2. Let $S = \bigcup\limits_{i=1}^nA_i$ and $A_i \cap A_j = \emptyset$ for $i \ne j$.  Then $P(B) = \sum\limits_{i=1}^nP(B|A_i)P(A_i)$
 
-where $\emptyset$ stands for the empty set. 
+where $\emptyset$ stands for the empty set and $\bigcup$ is the union operator. For example, $A_1 \bigcup A_2$ is the union of the elements in the sets $A_1$ and $A_2$. This is the set of elements that are shared in common between $A_1$ and $A_2$. 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # Generated using Claude AI
